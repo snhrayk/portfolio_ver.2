@@ -1,0 +1,34 @@
+@import "common";
+
+html {
+  font-size: 62.5%;
+}
+
+.borderTop {
+  border-top: 2px solid $shadowLine;
+  .footerWrap {
+    width: 100%;
+    height: 8vh;
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+    .snsWrap {
+      margin-left: 10%;
+      a {
+        margin: 0 1rem;
+      }
+    }
+    p {
+      margin-right: 10%;
+      small {
+        color: white;
+        font-family: $font;
+        font-weight: 500;
+        font-size: 2rem;
+      }
+    }
+  }
+}
