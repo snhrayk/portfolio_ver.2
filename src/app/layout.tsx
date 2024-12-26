@@ -1,5 +1,7 @@
 "use client";
 import Footer from "./components/Footer";
+import Nav from "./components/Nav";
+import "ress";
 import "./globals.css";
 
 export default function RootLayout({
@@ -14,7 +16,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-
+        <Nav />
         <Footer />
       </body>
     </html>

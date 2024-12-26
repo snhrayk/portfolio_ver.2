@@ -1,0 +1,11 @@
+@import "../styles/common.scss";
+
+.windowWrap {
+  @extend %windowWrap;
+  .pageArea {
+    background-image: url("../../../public/img/bg-line.svg") repeat, $sub;
+  }
+}
+
+.profile {
+}

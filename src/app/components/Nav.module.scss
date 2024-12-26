@@ -1,0 +1,49 @@
+@import "../styles/common.scss";
+
+.navWrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 2vw;
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.4rem;
+
+  .navChild {
+    width: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.4rem;
+    img {
+      width: 6.4rem;
+      height: 6.4rem;
+      object-fit: cover;
+      padding: 0.2rem;
+    }
+    p {
+      font-size: 1.6rem;
+      font-family: $font;
+      font-weight: 500;
+      color: $black;
+      margin: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      img {
+        background-color: $bgBlur;
+        border-radius: 4px;
+        outline: 2px solid $shadowLine;
+        outline-offset: -2px;
+      }
+      p {
+        background-color: $pink;
+        border-radius: 4px;
+        padding: 0 0.4rem;
+        color: $white;
+      }
+    }
+  }
+}
