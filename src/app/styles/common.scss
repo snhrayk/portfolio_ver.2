@@ -1,0 +1,35 @@
+// font-family
+@font-face {
+  font-family: "PixelMplus10";
+  src: url(../fonts/PixelMplus-20130602/PixelMplus10-Regular.woff)
+      format("woff"),
+    url(../fonts//PixelMplus-20130602//PixelMplus10-Regular.woff2)
+      format("woff2");
+}
+$font: "PixelMplus10", sans-serif;
+$subFont: "osaka", sans-serif;
+
+// color
+$black: #171717;
+$white: #fefefe;
+$bgBlur: rgba(256, 256, 256, 0.5);
+$bgBlur2: rgba(23, 23, 23, 0.3);
+$shadowLine: #d9d9d9;
+$main: #62639c;
+$sub: #abbae5;
+$mint: #c2efdb;
+$pink: #f36daf;
+$gray: gray;
+// $prizeBg: rgb(243, 109, 175, 0.3);
+// $worksBg: rgb(171, 186, 229, 0.3);
+// $worksNav: rgb(171, 186, 229, 0.5);
+// $html: rgba(255, 99, 71, 0.3);
+// $css: rgba(0, 191, 255, 0.3);
+// $scss: rgba(211, 0, 179, 0.3);
+// $js: rgba(255, 215, 0, 0.3);
+// $firebase: rgb(255, 215, 0, 0.3);
+// $nextJs: rgb(97, 218, 251, 0.3);
+// $ai: rgba(255, 154, 1, 0.8);
+// $ps: rgba(49, 168, 255, 0.8);
+// $xd: rgba(255, 97, 246, 0.8);
+// $figma: rgb(23, 23, 23, 0.8);
