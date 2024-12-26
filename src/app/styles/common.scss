@@ -1,13 +1,8 @@
-// font-family
-@font-face {
-  font-family: "PixelMplus10";
-  src: url(../fonts/PixelMplus-20130602/PixelMplus10-Regular.woff)
-      format("woff"),
-    url(../fonts//PixelMplus-20130602//PixelMplus10-Regular.woff2)
-      format("woff2");
-}
-$font: "PixelMplus10", sans-serif;
-$subFont: "osaka", sans-serif;
+// font-size
+$s: clamp(0.6rem, -0.11rem + 2.67vw, 1.6rem);
+$m: clamp(1rem, 0.29rem + 2.67vw, 2rem);
+$l: clamp(1.4rem, 0.69rem + 2.67vw, 2.4rem);
+$ll: clamp(3rem, 2.29rem + 2.67vw, 4rem);
 
 // color
 $black: #171717;
@@ -34,6 +29,17 @@ $gray: gray;
 // $xd: rgba(255, 97, 246, 0.8);
 // $figma: rgb(23, 23, 23, 0.8);
 
+// font-family
+@font-face {
+  font-family: "PixelMplus10";
+  src: url(../fonts/PixelMplus-20130602/PixelMplus10-Regular.woff)
+      format("woff"),
+    url(../fonts//PixelMplus-20130602//PixelMplus10-Regular.woff2)
+      format("woff2");
+}
+$font: "PixelMplus10", sans-serif;
+$subFont: "osaka", sans-serif;
+
 // windowスタイル
 %windowWrap {
   width: 88vw;
@@ -55,14 +61,14 @@ $gray: gray;
     align-items: center;
     padding: 0 0 0 0.8rem;
     h1 {
-      font-size: 2rem;
+      font-size: $m;
       font-family: $font;
       color: $white;
     }
   }
   .pageArea {
     width: 100%;
-    height: auto;
+    height: 80.5vh;
     overflow: auto;
   }
 }

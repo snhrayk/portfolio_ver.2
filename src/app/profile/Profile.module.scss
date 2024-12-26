@@ -3,9 +3,85 @@
 .windowWrap {
   @extend %windowWrap;
   .pageArea {
-    background-image: url("../../../public/img/bg-line.svg") repeat, $sub;
+    background: url("../../../public/img/bg-line.svg") repeat $sub;
   }
 }
 
-.profile {
+.profileTop {
+  width: 56vw;
+  aspect-ratio: 1.618 / 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vh auto 0;
+  padding: 0 2vw;
+  background-color: rgba(256, 256, 256, 0.8);
+  box-shadow: 0px 0px 8px 0px rgba(23, 23, 23, 0.25);
+  border-radius: 2rem;
+  .imgWrap {
+    width: 18vw;
+    aspect-ratio: 3 / 4;
+    background: url(../../../public/img/me.png),
+      linear-gradient(180deg, $pink 0%, #8f8f8f 100%);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $black;
+  }
+  .textTop {
+    width: 30vw;
+    height: auto;
+    h2 {
+      font-size: $ll;
+      font-weight: lighter;
+    }
+    .name {
+      margin: 2rem 0 0 2rem;
+      font-size: $s;
+      font-weight: lighter;
+      span {
+        margin-left: 2rem;
+        font-size: $l;
+        font-family: $subFont;
+      }
+    }
+    .schoolWrap {
+      display: flex;
+      margin: 1rem 0 0 2rem;
+      p {
+        font-size: $s;
+      }
+      .school {
+        margin-left: 2rem;
+        font-size: $m;
+        font-family: $subFont;
+        span {
+          margin-left: 0.4rem;
+          font-size: $s;
+        }
+      }
+    }
+    .from {
+      margin: 1rem 0 0 2rem;
+      font-size: $s;
+      span {
+        margin-left: 2rem;
+        font-family: $subFont;
+        font-size: $m;
+      }
+    }
+    .birth {
+      margin: 1rem 0 0 2rem;
+      font-size: $s;
+      time {
+        margin-left: 2rem;
+        font-family: $subFont;
+        font-size: $m;
+      }
+    }
+    .graduation {
+      margin: 2rem 0 0 2rem;
+      font-size: $l;
+      color: $pink;
+    }
+  }
 }

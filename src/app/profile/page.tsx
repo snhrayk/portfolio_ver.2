@@ -14,13 +14,13 @@ export default function Profile() {
           <div className={styles.profileTop}>
             <div className={styles.imgWrap}></div>
             <div className={styles.textTop}>
-              <h1>profile card</h1>
+              <h2>profile card</h2>
               <p className={styles.name}>
                 name<span>砂原彩花</span>
               </p>
-              <div className={styles.schWrap}>
+              <div className={styles.schoolWrap}>
                 <p>education</p>
-                <p className={styles.sch}>
+                <p className={styles.school}>
                   ECCコンピュータ専門学校 <br />
                   <span>マルチメディア研究学科 / Webデザインコース</span>
                 </p>
