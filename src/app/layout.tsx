@@ -1,5 +1,3 @@
-import Footer from "./components/footer";
-import Nav from "./components/Nav";
 import "./globals.css";
 
 export default function RootLayout({
@@ -12,11 +10,7 @@ export default function RootLayout({
       <head>
         <title>Sunahara Ayaka&apos;s Portfolio</title>
       </head>
-      <body>
-        <Nav />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
