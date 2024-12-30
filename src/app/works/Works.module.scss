@@ -2,4 +2,31 @@
 
 .windowWrap {
   @extend %windowWrap;
+  .pageArea {
+    background: url(../../../public/img/bg-line.svg) repeat, $white;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $sub;
+  img {
+    width: 10rem;
+    height: auto;
+    // border: 1px solid tomato;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    li {
+      width: calc(100% / 5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
