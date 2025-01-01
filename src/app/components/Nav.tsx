@@ -12,11 +12,11 @@ export default function Nav() {
         <Image src={profile} alt="プロフィール" />
         <p>Profile</p>
       </Link>
-      <Link href="works" className={styles.navChild}>
+      <Link href="/works" className={styles.navChild}>
         <Image src={works} alt="作品紹介" />
         <p>Works</p>
       </Link>
-      <Link href="contact" className={styles.navChild}>
+      <Link href="mailto:ayaka21sunahara@gmail.com" className={styles.navChild}>
         <Image src={contact} alt="お問い合わせ" />
         <p>Contact</p>
       </Link>

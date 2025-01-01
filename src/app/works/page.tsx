@@ -22,10 +22,6 @@ export default function Works() {
             <ul className={styles.nav}>
               <li>オススメ!</li>
               <li>受賞歴有</li>
-              <li>すべて</li>
-              <li>個人制作</li>
-              <li>チーム制作</li>
-              <li>グラフィック物</li>
             </ul>
           </header>
           {worksData.map((work) => (
