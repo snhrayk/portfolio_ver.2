@@ -1,7 +1,7 @@
 import styles from "./Footer.module.scss";
+import Image from "next/image";
 import insta from "../../../public/img/instagram_footer.png";
 import github from "../../../public/img/github_footer.png";
-import Image from "next/image";
 // import x from "../../../public/img/x-logo.png";
 
 export default function Footer() {

@@ -18,8 +18,8 @@ $mint: #c2efdb;
 $pink: #f36daf;
 $gray: gray;
 // $prizeBg: rgb(243, 109, 175, 0.3);
-// $worksBg: rgb(171, 186, 229, 0.3);
-// $worksNav: rgb(171, 186, 229, 0.5);
+$worksBg: rgb(171, 186, 229, 0.3);
+$worksNav: rgb(171, 186, 229, 0.5);
 // $html: rgba(255, 99, 71, 0.3);
 // $css: rgba(0, 191, 255, 0.3);
 // $scss: rgba(211, 0, 179, 0.3);
@@ -74,6 +74,6 @@ $subFont: "osaka", sans-serif;
   .pageArea {
     width: 100%;
     height: 80.5vh;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }

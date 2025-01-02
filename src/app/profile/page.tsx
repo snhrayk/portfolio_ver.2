@@ -8,6 +8,11 @@ import paint from "../../../public/img/paint_profile_fav.png";
 import movie from "../../../public/img/movies_profile_fav.png";
 
 export default function Profile() {
+  // const awardLink = (event, href, windowName) => {
+  //   event.preventDefault();
+  //   window.open(href, windowName);
+  // };
+
   return (
     <>
       <div className={styles.windowWrap}>
@@ -99,32 +104,31 @@ export default function Profile() {
             <h2>about</h2>
             {/* 簡単に3行 */}
             <p className={styles.firstText}>
-              デザインの知識とコーディング力が両方活かせるデザインエンジニアを現在目指しています。デザイナーとエンジニアの通訳を行ったり、仕事内容によって役割を変えたりなど、私が持つスキルを様々な場面で活躍したいです。
-              {/* 1年生の頃はフロントエンドエンジニアを目指していました。ですが1年生の冬頃、自分が作成したポスターが準グランプリに選ばれたことをきっかけに自分のデザイン力にも自信を持つことができ、現在はデザインもコーディングも両方勉強しております。 */}
+              {/* デザインの知識とコーディング力が両方活かせるデザインエンジニアを現在目指しています。デザイナーとエンジニアの通訳を行ったり、仕事内容によって役割を変えたりなど、私が持つスキルを様々な場面で活躍したいです。 */}
             </p>
             {/* デザインとコーディングについて */}
             <div className={styles.detailWrap}>
               <div className={styles.detailChild}>
                 <h3>coding</h3>
                 <p>
-                  コーディングは難しいことも多いですが、課題や制作を通して少しずつ成長しています。
+                  {/* コーディングは難しいことも多いですが、課題や制作を通して少しずつ成長しています。
                   自分でコードを考えて書いて、それが実際に自分の思い通りに動いたときがコーディングをしている上で感じる楽しい瞬間です。
                   <br />
-                  reactやnext.jsをさらに極めるため現在勉強中です。
+                  reactやnext.jsをさらに極めるため現在勉強中です。 */}
                 </p>
               </div>
               <div className={styles.detailChild}>
                 <h3>design</h3>
                 <p>
-                  キャンドルナイトに向けてポスターを制作した際、自分のポスターが準グランプリに選ばれたことがきっかけで自分のデザインに自信を持つことができました。
-                  そこからデザインに対してさらに興味を持つようになり、現在はWebサイトやWebアプリに欠かせないUI/UXデザインを勉強中です。
+                  {/* キャンドルナイトに向けてポスターを制作した際、自分のポスターが準グランプリに選ばれたことがきっかけで自分のデザインに自信を持つことができました。
+                  そこからデザインに対してさらに興味を持つようになり、現在はWebサイトやWebアプリに欠かせないUI/UXデザインを勉強中です。 */}
                 </p>
               </div>
             </div>
             {/* 私の強み */}
             <div className={styles.strongWrap}>
               <h3>私の強み</h3>
-              <p>私の強みは</p>
+              <p>{/* 私の強みは */}</p>
             </div>
             {/* 受賞歴 */}
             <div className={styles.awardWrap}>
@@ -134,16 +138,45 @@ export default function Profile() {
               <ul>
                 <li>2023年度 +E展 敢闘賞受賞</li>
                 <li>
-                  2023年度 中崎町キャンドルナイト ポスター 準グランプリ受賞
+                  <a
+                    href="https://npo.ecc.ac.jp/activities/index.php?c=topics_view&pk=1709003397&cn=8"
+                    // onClick={(event) =>
+                    //   awardLink(
+                    //     event,
+                    //     "https://npo.ecc.ac.jp/activities/index.php?c=topics_view&pk=1709003397&cn=8",
+                    //     "2024年中崎町キャンドルナイト(済美冬まつり)"
+                    //   )
+                    // }
+                  >
+                    2023年度 中崎町キャンドルナイト ポスター 準グランプリ受賞
+                  </a>
                 </li>
                 <li>
-                  <a href="https://html5award.com/award2023">
+                  <a
+                    href="https://html5award.com/award2023"
+                    // onClick={(event) =>
+                    //   awardLink(
+                    //     event,
+                    //     "https://html5award.com/award2023",
+                    //     "2023年度 専門学校HTML5作品アワード"
+                    //   )
+                    // }
+                  >
                     2023年度 専門学校HTML5作品アワード 入選
                   </a>
                 </li>
                 <li>2023年度 +E展 コンセプト賞受賞</li>
                 <li>
-                  <a href="https://hacku.yahoo.co.jp/hacku2024_tokyo2/">
+                  <a
+                    href="https://hacku.yahoo.co.jp/hacku2024_tokyo2/"
+                    // onClick={(event) =>
+                    //   awardLink(
+                    //     event,
+                    //     "https://hacku.yahoo.co.jp/hacku2024_tokyo2/",
+                    //     "2024年度 Open Hack U 2024 TOKYO vol.2"
+                    //   )
+                    // }
+                  >
                     2024年度 Open Hack U 2024 TOKYO vol.2 最優秀賞受賞
                   </a>
                 </li>
