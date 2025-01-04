@@ -1,7 +1,7 @@
 import styles from "./Nav.module.scss";
-import profile from "../../../public/img/profile_nav.png";
-import works from "../../../public/img/works_nav.png";
-import contact from "../../../public/img/contact_nav.png";
+import profile from "../../../public/img/profile_nav.svg";
+import works from "../../../public/img/works_nav.svg";
+import contact from "../../../public/img/contact_nav.svg";
 import Image from "next/image";
 import Link from "next/link";
 
