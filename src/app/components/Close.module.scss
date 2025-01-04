@@ -11,9 +11,9 @@
   justify-content: center;
   align-items: center;
   background-color: $shadowLine;
-}
-.closeBtn:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: url("/img/cursor_click.png"), pointer;
+  }
 }
 
 // クリックしたとき

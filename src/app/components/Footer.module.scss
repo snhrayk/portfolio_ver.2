@@ -17,13 +17,20 @@
     border-top: 2px solid $black;
     border-bottom: 2px solid $black;
     .snsWrap {
+      display: flex;
       margin-left: 10vw;
       a {
+        display: block;
         margin: 0 1rem;
         img {
           width: 4rem;
           height: 4rem;
           object-fit: cover;
+        }
+        &:hover {
+          img {
+            cursor: url("/img/cursor_click.png"), pointer;
+          }
         }
       }
     }

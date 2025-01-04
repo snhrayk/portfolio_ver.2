@@ -229,6 +229,9 @@
       text-decoration-color: $black;
       text-underline-offset: 4px;
       padding-bottom: 0.8rem;
+      a:hover {
+        cursor: url("/img/cursor_click.png"), pointer;
+      }
     }
   }
   .internWrap {
