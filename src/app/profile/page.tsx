@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Close from "../components/Close";
 import styles from "./Profile.module.scss";
-import figma from "../../../public/img/figma_profile_skill.png";
-import ramen from "../../../public/img/ramen_profile_fav.png";
-import music from "../../../public/img/music_profile_fav.png";
-import paint from "../../../public/img/paint_profile_fav.png";
-import movie from "../../../public/img/movies_profile_fav.png";
+import figma from "../../../public/img/figma_profile_skill.svg";
+import ramen from "../../../public/img/ramen_profile_myfav.svg";
+import music from "../../../public/img/music_profile_myfav.svg";
+import paint from "../../../public/img/paint_profile_myfav.svg";
+import movie from "../../../public/img/movie_profile_myfav.svg";
 
 export default function Profile() {
   // const awardLink = (event, href, windowName) => {

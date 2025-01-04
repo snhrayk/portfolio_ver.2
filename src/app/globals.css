@@ -3,6 +3,10 @@
   --bg: #c2efdb;
 }
 
+* {
+  cursor: url("/img/cursor.svg"), auto;
+}
+
 html {
   font-size: 62.5%;
 }
