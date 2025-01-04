@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Close from "../components/Close";
 import styles from "./Works.module.scss";
-import logo from "../../../public/img/portfolio_logo.png";
+import logo from "../../../public/img/portfolio_logo.webp";
 
 import heading from "../data/worksHeading";
 import Link from "next/link";
@@ -18,7 +18,6 @@ export default function Works() {
         </div>
         <div className={styles.pageArea}>
           <header className={styles.header}>
-            {/* 後で変更予定 */}
             <Image src={logo} alt="ポートフォリオロゴ" />
             <ul className={styles.nav}>
               <li>受賞歴有</li>

@@ -17,10 +17,10 @@
   flex-direction: column;
   background-color: $sub;
   img {
-    width: 8rem;
-    height: auto;
-    padding: 2vh 0;
-    // border: 1px solid tomato;
+    width: 15%;
+    height: 12vh;
+    object-fit: cover;
+    margin: 2vh 0;
   }
   .nav {
     width: 100%;
