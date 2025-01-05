@@ -12,6 +12,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <link rel="icon" type="image/png" href="img/favicon.png" />
         <title>Sunahara Ayaka&apos;s Portfolio</title>
       </head>
       <body>
