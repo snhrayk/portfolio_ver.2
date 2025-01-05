@@ -191,6 +191,10 @@
         font-size: $s;
         line-height: 1.6;
         font-family: $subFont;
+        span {
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
       }
     }
   }
@@ -262,25 +266,24 @@
   .childWrap {
     width: inherit;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    row-gap: 2.4rem;
+    row-gap: 1.6rem;
     .favChild {
-      width: 40%;
+      width: 45%;
       display: flex;
       align-items: center;
-      column-gap: 2.4rem;
-      // border: 1px solid tomato;
+      column-gap: 1.6rem;
       img {
         width: 7.2rem;
         height: 7.2rem;
         object-fit: cover;
       }
       p {
-        font-size: $l;
+        font-size: $s;
+        font-family: $subFont;
         span {
-          font-family: $subFont;
-          font-size: $s;
+          font-size: $m;
         }
       }
     }
