@@ -167,13 +167,23 @@
     font-size: $xl;
     font-weight: lighter;
   }
-  .firstText {
+  .strongWrap {
     width: 85%;
-    font-size: $s;
-    font-family: $subFont;
-    text-align: left;
-    margin: 1.6rem auto 2.4rem;
+    margin: 2.4rem auto 4.8rem;
+    p {
+      font-size: $s;
+      font-family: $subFont;
+      line-height: 1.6;
+      &:first-child {
+        font-size: $m;
+        // margin-bottom: 0.4rem;
+        span {
+          font-size: $ll;
+        }
+      }
+    }
   }
+
   .detailWrap {
     width: 85%;
     display: flex;
@@ -181,11 +191,14 @@
     margin: 0 auto;
     .detailChild {
       width: 45%;
-      text-align: left;
+      border: 2px solid $gray;
+      border-radius: 1.6rem;
+      padding: 2vh 2%;
       h3 {
         font-size: $l;
         font-weight: lighter;
         margin-bottom: 0.8rem;
+        color: $black;
       }
       p {
         font-size: $s;
@@ -193,24 +206,17 @@
         font-family: $subFont;
         span {
           text-decoration: underline;
-          text-underline-offset: 3px;
+          text-underline-offset: 4px;
         }
       }
     }
   }
-  .strongWrap {
+  .summaryText {
     width: 85%;
-    margin: 5.6rem auto 0;
-    h3 {
-      font-size: $m;
-      font-weight: lighter;
-      margin-bottom: 0.8rem;
-    }
-    p {
-      font-size: $s;
-      line-height: 1.6;
-      font-family: $subFont;
-    }
+    font-size: $s;
+    font-family: $subFont;
+    text-align: left;
+    margin: 2.4rem auto;
   }
   .awardWrap {
     width: 85%;
@@ -252,6 +258,23 @@
       font-family: $subFont;
     }
   }
+  .certification {
+    width: 85%;
+    margin: 5.6rem auto 0;
+    h3 {
+      font-size: $m;
+      font-weight: lighter;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      font-family: $subFont;
+      font-size: $s;
+      line-height: 1.6;
+      span {
+        font-size: $m;
+      }
+    }
+  }
 }
 
 .myFav {
@@ -289,17 +312,3 @@
     }
   }
 }
-
-// .certification {
-//   padding: 1.6rem 0 3.2em;
-//   font-family: $subFont;
-//   text-align: center;
-//   p {
-//     &:nth-child(1) {
-//       font-size: $m;
-//     }
-//     &:nth-child(2) {
-//       font-size: $s;
-//     }
-//   }
-// }
