@@ -104,15 +104,12 @@ export default function Profile() {
             <h2>about me</h2>
             {/* 私の長所 */}
             <div className={styles.strongWrap}>
-              <p>
-                <span>スポンジのように。</span>
+              <p className={styles.italic}>
+                <span>スポンジのように</span>
                 新しいことを吸収し、自分のものにする。
-                失敗しても素直に反省し、次に活かす。
+                柔らかく変幻自在で、どんな場面でも適応できる。
               </p>
-              <p>
-                をモットーにしています。
-                {/* 行動力と几帳面さが私の大きな長所です */}
-              </p>
+              <p>スポンジをモットーに、日々学んでいます。</p>
             </div>
             {/* デザインとコーディングについて */}
             <div className={styles.detailWrap}>
@@ -223,7 +220,7 @@ export default function Profile() {
               <p>
                 全商簿記実務検定1級 / 全商英語検定1級 /
                 全商ビジネス計算実務検定試験(電卓)1級 / 全商商業経済検定1級 /
-                全商情報処理検定2級(プログラミング部門) / 色彩検定3級
+                全商情報処理検定2級(プログラミング部門) / 色彩検定3級 取得済
               </p>
             </div>
           </section>

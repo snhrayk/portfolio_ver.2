@@ -174,12 +174,13 @@
       font-size: $s;
       font-family: $subFont;
       line-height: 1.6;
-      &:first-child {
-        font-size: $m;
-        // margin-bottom: 0.4rem;
-        span {
-          font-size: $ll;
-        }
+    }
+    .italic {
+      font-style: italic;
+      font-size: $s;
+      span {
+        font-size: $ll;
+        margin-right: 1.6rem;
       }
     }
   }

@@ -42,19 +42,19 @@ const detail = [
       "入学してから初めての個人制作。今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。子育ての疲れに効果的な紅茶をご用意しております。",
     thoughts: "",
     // 使用言語
-    // codingIcons: [
-    //   "/img/html.svg",
-    //   "/img/css.svg",
-    //   "/img/js.svg",
-    //   "/img/react.svg",
-    //   "/img/sass.svg",
-    // ],
-    // designIcons: [
-    //   "/img/xd.svg",
-    //   "/img/figma.svg",
-    //   "/img/illustrator.svg",
-    //   "/img/photoshop.svg",
-    // ],
+    codingIcons: [
+      "/img/html.svg",
+      "/img/css.svg",
+      "/img/js.svg",
+      "/img/react.svg",
+      "/img/sass.svg",
+    ],
+    designIcons: [
+      "/img/xd.svg",
+      "/img/figma.svg",
+      "/img/illustrator.svg",
+      "/img/photoshop.svg",
+    ],
     // 画像
     slideImg: [
       "/img/herstel_heading.webp",

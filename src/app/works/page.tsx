@@ -30,25 +30,27 @@ export default function Works() {
                     <Image
                       src={work.img}
                       alt={work.title}
-                      width={250}
-                      height={200}
+                      width={297}
+                      height={210}
                       className={styles.workImg}
                     />
                   )}
-                  {work.awardImg && (
+                  {/* {work.awardImg && (
                     <Image
                       src={work.img}
                       alt={work.title}
-                      width={300}
-                      height={250}
+                      width={297}
+                      height={210}
                       className={styles.workImg}
                     />
-                  )}
+                  )} */}
                   <h2>{work.title}</h2>
                   <p className={styles.explain}>{work.explain}</p>
                   <div className={styles.btnWrap}>
                     <p className={styles.workDate}>{work.date}</p>
-                    <Link href={`/${work.id}`}>詳細を見る</Link>
+                    <Link href={`works/worksDetail/${work.id}`}>
+                      詳細を見る
+                    </Link>
                   </div>
                 </div>
               </section>

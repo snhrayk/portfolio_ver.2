@@ -1,8 +1,10 @@
 @import "../styles/common.scss";
 
 .closeBtn {
-  width: 20px;
-  height: 20px;
+  width: 1.6vw;
+  min-width: 2.4rem;
+  height: auto;
+  aspect-ratio: 1/1;
   border-top: 1px solid $white;
   border-left: 1px solid $white;
   border-right: 1px solid $black;
@@ -13,6 +15,11 @@
   background-color: $shadowLine;
   &:hover {
     cursor: url("/img/cursor_click.png"), pointer;
+  }
+  img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
