@@ -3,7 +3,7 @@ import Close from "../components/Close";
 import styles from "./Works.module.scss";
 import logo from "../../../public/img/portfolio_logo.webp";
 
-import heading from "../data/worksHeading";
+import worksData from "../data/worksData";
 import Link from "next/link";
 import WorksNav from "../components/WorksNav";
 
@@ -23,7 +23,7 @@ export default function Works() {
           </header>
           <WorksNav />
           <div className={styles.worksArea}>
-            {heading.map((work) => (
+            {worksData.map((work) => (
               <section key={work.id} className={styles.workWrap}>
                 <div className={styles.workItem}>
                   {work.img && (
@@ -48,9 +48,7 @@ export default function Works() {
                   <p className={styles.explain}>{work.explain}</p>
                   <div className={styles.btnWrap}>
                     <p className={styles.workDate}>{work.date}</p>
-                    <Link href={`works/worksDetail/${work.id}`}>
-                      詳細を見る
-                    </Link>
+                    <Link href={`/works/${work.id}`}>詳細を見る</Link>
                   </div>
                 </div>
               </section>

@@ -1,4 +1,4 @@
-const heading = [
+const worksData = [
   // テンプレート
   // {
   //   id: ,
@@ -17,6 +17,36 @@ const heading = [
     img: "/img/herstel_heading.webp",
     awardImg: "",
     tag: ["受賞作品", "個人制作"],
+    id: 1,
+    period: "2023.04~2023.08",
+    // 説明
+    explain:
+      "入学してから初めての個人制作。今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。子育ての疲れに効果的な紅茶をご用意しております。",
+    thoughts: "",
+    // 使用言語
+    codingIcons: [
+      "/img/html.svg",
+      "/img/css.svg",
+      "/img/js.svg",
+      "/img/react.svg",
+      "/img/sass.svg",
+    ],
+    designIcons: [
+      "/img/xd.svg",
+      "/img/figma.svg",
+      "/img/illustrator.svg",
+      "/img/photoshop.svg",
+    ],
+    // 画像
+    slideImg: [
+      "/img/herstel_heading.webp",
+      "/img/herstel_heading.webp",
+      "/img/herstel_heading.webp",
+    ],
+    awardImg: "",
+    // URL
+    workUrl: "https://snhrayk.github.io/herstel/",
+    githubUrl: "https://github.com/snhrayk/herstel",
   },
   {
     id: 2,
@@ -133,4 +163,4 @@ const heading = [
   },
 ];
 
-export default heading;
+export default worksData;
