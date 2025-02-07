@@ -20,11 +20,19 @@
   align-items: center;
   background-color: $sub;
   border-bottom: 2px solid $black;
-  img {
+  a {
     width: 12%;
     height: auto;
-    object-fit: cover;
     margin: 2vh 0;
+    display: block;
+    &:hover {
+      cursor: url("/img/cursor_click.png"), pointer;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 }
 

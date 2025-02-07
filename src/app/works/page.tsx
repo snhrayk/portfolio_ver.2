@@ -19,7 +19,9 @@ export default function Works() {
         </div>
         <div className={styles.pageArea}>
           <header className={styles.header}>
-            <Image src={logo} alt="ポートフォリオロゴ" />
+            <Link href="/works">
+              <Image src={logo} alt="ポートフォリオロゴ" />
+            </Link>
           </header>
           <WorksNav />
           <div className={styles.worksArea}>

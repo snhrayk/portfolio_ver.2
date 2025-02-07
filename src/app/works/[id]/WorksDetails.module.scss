@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 12vh calc(80.5vh - 12vh);
+    font-family: $subFont;
   }
 }
 
@@ -20,11 +21,19 @@
   align-items: center;
   background-color: $sub;
   border-bottom: 2px solid $black;
-  img {
+  a {
     width: 12%;
     height: auto;
-    object-fit: cover;
     margin: 2vh 0;
+    display: block;
+    &:hover {
+      cursor: url("/img/cursor_click.png"), pointer;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 }
 
@@ -38,47 +47,11 @@
 }
 
 .sliderWrap {
-  width: 50%;
-  padding-top: 4%;
-  .pdfLink {
-    margin: 18% 0 0 10%;
-    font-size: 1.2rem;
-    a {
-      color: $black;
-      span {
-        font-weight: bold;
-      }
-      &:before {
-        content: "";
-        width: 1.6rem;
-        aspect-ratio: 1;
-        display: inline-block;
-        vertical-align: text-top;
-        background-image: url(/img/link.svg);
-        background-size: cover;
-        background-position: center;
-        margin-right: 0.2rem;
-      }
-    }
-    &:hover {
-      a {
-        color: $pink;
-        &:before {
-          background-image: url(/img/link-hover.svg);
-        }
-      }
-    }
-  }
-  .pageExplain {
-    margin: 2% 0 0 12%;
-    p {
-      font-size: 1rem;
-    }
-  }
+  width: 60%;
 }
 
 .data {
-  width: 50%;
+  width: 40%;
   padding: 4% 2% 0 2%;
   // border: 1px solid tomato;
   .dataTop {
@@ -110,7 +83,6 @@
     display: flex;
     align-items: center;
     font-size: 1.6rem;
-    font-family: $subFont;
     font-weight: bold;
   }
   .mainExplain {
@@ -124,26 +96,53 @@
   .usedWrap {
     display: flex;
     margin: 0.6rem 0 0 0.4rem;
+    column-gap: 0.6rem;
     .usedApp {
       width: 3.2rem;
       height: 3.2rem;
-      margin-right: 0.6rem;
       border-radius: 3px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $white;
+      border: 1px solid transparent;
       p {
         font-family: $font;
         font-size: 2.4rem;
         padding-left: 0.2rem;
       }
     }
-    .usedApp:nth-child(1) {
-      border: 1px solid $ps;
+    // コーディング用
+    .html {
+      background-color: rgba(255, 99, 71, 0.3);
     }
-    .usedApp:nth-child(2) {
-      border: 1px solid $ai;
+    .css {
+      background-color: rgba(0, 191, 255, 0.3);
+    }
+    .scss {
+      background-color: rgba(211, 0, 179, 0.3);
+    }
+    .js {
+      background-color: rgba(255, 215, 0, 0.3);
+    }
+    .firebase {
+      background-color: rgba(255, 215, 0, 0.3);
+    }
+    .nextJs {
+      background-color: rgba(97, 218, 251, 0.3);
+    }
+    // デザイン用
+    .ai {
+      border-color: rgba(255, 154, 1, 0.8);
+    }
+    .ps {
+      border-color: rgba(49, 168, 255, 0.8);
+    }
+    .xd {
+      border-color: rgba(255, 97, 246, 0.8);
+    }
+    .figma {
+      border-color: rgba(23, 23, 23, 0.8);
     }
   }
   .btnWrap {
@@ -172,7 +171,6 @@
       text-decoration: none;
       color: $white;
       font-size: 1.4rem;
-      font-family: $font;
     }
   }
   .subExplain {
