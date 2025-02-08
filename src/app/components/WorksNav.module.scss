@@ -6,14 +6,15 @@
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   border-right: 2px solid $black;
+  background-color: $worksNav;
   .nav {
-    background-color: $worksNav;
     li {
       padding: 2vh 0;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: $s;
+      font-family: $font;
       &:hover {
         background: $bgBlur;
         cursor: url("/img/cursor_click.png"), pointer;

@@ -39,9 +39,6 @@ export default function WorksDetail() {
             <WorksSlider slideImg={work.slideImg} />
           </div>
           <div className={styles.data}>
-            {/* <div className={styles.dataTop}>
-              <p className={styles.prize}>{}</p>
-            </div> */}
             <h3>{work.title}</h3>
             <p className={styles.date}>{work.period}</p>
             <p className={styles.mainExplain}>{work.explain}</p>
@@ -85,12 +82,10 @@ export default function WorksDetail() {
               })}
             </ul>
             <div className={styles.btnWrap}>
-              <p className={styles.term}>1年後期</p>
-              <p className={styles.siteBtn}>サイトはありません</p>
-            </div>
-            <div>
-              <h4>制作感想</h4>
-              <p className={styles.subExplain}>{work.explain}</p>
+              <p className={styles.term}>{work.date}</p>
+              <Link href={work.workUrl} className={styles.siteBtn}>
+                サイトを見る
+              </Link>
             </div>
           </div>
         </div>

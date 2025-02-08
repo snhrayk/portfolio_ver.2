@@ -3,7 +3,7 @@
 .windowWrap {
   @extend %windowWrap;
   .pageArea {
-    background: url("../../../public/img/bg-line.svg") repeat $sub;
+    background: url("/img/bg-line.svg") repeat $sub;
     padding-bottom: 8vh;
   }
 }
@@ -20,12 +20,12 @@
     column-gap: 0.8rem;
     margin: 7vh 2%;
     background-color: rgba(256, 256, 256, 0.8);
-    box-shadow: 0px 0px 8px 0px rgba(23, 23, 23, 0.25);
+    box-shadow: 0px 0px 4px 0px rgba(23, 23, 23, 0.25);
     border-radius: 2rem;
     .imgWrap {
       width: 30%;
       aspect-ratio: 3 / 4;
-      background: url(../../../public/img/me.png),
+      background: url("/img/me.png"),
         linear-gradient(180deg, $pink 0%, #8f8f8f 100%);
       background-size: cover;
       background-position: center;
@@ -170,16 +170,23 @@
   .strongWrap {
     width: 85%;
     margin: 2.4rem auto 4.8rem;
-    p {
+    h3 {
+      font-size: $l;
+      font-weight: lighter;
+      font-family: $subFont;
+      margin-bottom: 0.8rem;
+      color: $black;
+      span {
+        font-size: $ll;
+      }
+    }
+    .strongText {
       font-size: $s;
       font-family: $subFont;
       line-height: 1.6;
-    }
-    .italic {
-      font-style: italic;
-      font-size: $s;
       span {
-        font-size: $ll;
+        font-weight: bolder;
+        font-size: $m;
         margin-right: 1.6rem;
       }
     }
@@ -259,6 +266,51 @@
       font-family: $subFont;
     }
   }
+  .history {
+    width: 85%;
+    margin: 5.6rem auto 0;
+    h3 {
+      font-size: $m;
+      font-weight: lighter;
+      margin-bottom: 0.8rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 2px solid $gray;
+      tbody {
+        width: inherit;
+        tr {
+          font-family: $subFont;
+          font-size: $s;
+          line-height: 1.6;
+          border-bottom: 1px solid $gray;
+          th {
+            width: 20%;
+            border-right: 1px solid $gray;
+            background-color: $main;
+            color: $white;
+          }
+          td {
+            width: 80%;
+            padding: 0.4rem 0.8rem;
+            background-color: $bgBlur;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    // p {
+    //   font-family: $subFont;
+    //   font-size: $s;
+    //   line-height: 1.6;
+    //   span {
+    //     font-size: $m;
+    //   }
+    // }
+  }
   .certification {
     width: 85%;
     margin: 5.6rem auto 0;
@@ -309,6 +361,90 @@
         span {
           font-size: $m;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profileTopWrap {
+    flex-direction: column;
+    .profileLeft {
+      width: 96%;
+      margin: 6dvh 2% 2dvh;
+      .textTop {
+        .schoolWrap {
+          .school {
+            span {
+              font-size: $ss;
+            }
+          }
+        }
+      }
+    }
+    .profileRight {
+      width: 96%;
+      margin: 0 2%;
+      .skills {
+        h2 {
+          text-align: center;
+        }
+        .software {
+          margin-top: 0.8rem;
+          h3 {
+            text-align: left;
+          }
+          .softWrap {
+            justify-content: start;
+          }
+        }
+      }
+      .jobType {
+        border: none;
+        text-align: start;
+        display: block;
+        padding: 0.8rem 0 0 0;
+        margin: 0 0 0 2%;
+        font-size: $m;
+      }
+    }
+  }
+  .about {
+    margin-top: 8dvh;
+    .strongWrap {
+      width: 94%;
+    }
+    .detailWrap {
+      width: 94%;
+      flex-direction: column;
+      row-gap: 2.4rem;
+      .detailChild {
+        width: 100%;
+      }
+    }
+    .summaryText {
+      width: 94%;
+    }
+    .awardWrap {
+      width: 94%;
+    }
+    .internWrap {
+      width: 94%;
+    }
+    .history {
+      width: 94%;
+    }
+    .certification {
+      width: 94%;
+    }
+  }
+  .myFav {
+    width: 94%;
+    .childWrap {
+      flex-direction: column;
+      padding: 0 2%;
+      .favChild {
+        width: 100%;
       }
     }
   }
