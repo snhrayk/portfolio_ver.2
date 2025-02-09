@@ -124,7 +124,9 @@
         }
         .softWrap {
           display: flex;
-          justify-content: center;
+          justify-content: start;
+          flex-wrap: wrap;
+          gap: 0.4rem;
           div {
             width: 5rem;
             height: 5rem;
