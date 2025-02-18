@@ -115,6 +115,7 @@ export default function Profile() {
                   <li>デザインエンジニア</li>
                 </ul>
               </div>
+              <p className={styles.scroll}>scroll</p>
             </div>
           </div>
           {/* about me */}

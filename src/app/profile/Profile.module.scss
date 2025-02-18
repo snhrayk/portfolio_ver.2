@@ -91,7 +91,7 @@
   }
   .profileRight {
     width: 40%;
-    padding: 6vh 2vw 4vh;
+    padding: 6vh 2vw 0;
     .skills {
       h2 {
         font-size: $ll;
@@ -165,6 +165,34 @@
       ul {
         li {
           font-size: $m;
+        }
+      }
+    }
+    .scroll {
+      font-size: $l;
+      padding: 0.8rem 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      &::after {
+        content: "";
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-image: url("/img/scroll_profile.svg");
+        background-size: cover;
+        background-position: center;
+        animation: scroll 3s infinite;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(0.8rem);
+        }
+        100% {
+          transform: translateY(0);
         }
       }
     }
