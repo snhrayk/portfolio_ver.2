@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Close from "../components/Close";
 import styles from "./Profile.module.scss";
@@ -8,10 +9,10 @@ import paint from "../../../public/img/paint_profile_myfav.svg";
 import movie from "../../../public/img/movie_profile_myfav.svg";
 
 export default function Profile() {
-  // const awardLink = (event, href, windowName) => {
-  //   event.preventDefault();
-  //   window.open(href, windowName);
-  // };
+  const awardLink = (event, href, windowName) => {
+    event.preventDefault();
+    window.open(href, windowName);
+  };
 
   return (
     <>
@@ -96,7 +97,14 @@ export default function Profile() {
                   </div>
                 </div>
               </section>
-              <p className={styles.jobType}>志望職種：デザインエンジニア</p>
+              <div className={styles.jobType}>
+                <p>志望職種</p>
+                <ul>
+                  <li>フロントエンドエンジニア</li>
+                  <li>UI/UXデザイナー</li>
+                  <li>デザインエンジニア</li>
+                </ul>
+              </div>
             </div>
           </div>
           {/* about me */}
@@ -166,13 +174,13 @@ export default function Profile() {
                 <li>
                   <a
                     href="https://npo.ecc.ac.jp/activities/index.php?c=topics_view&pk=1709003397&cn=8"
-                    // onClick={(event) =>
-                    //   awardLink(
-                    //     event,
-                    //     "https://npo.ecc.ac.jp/activities/index.php?c=topics_view&pk=1709003397&cn=8",
-                    //     "2024年中崎町キャンドルナイト(済美冬まつり)"
-                    //   )
-                    // }
+                    onClick={(event) =>
+                      awardLink(
+                        event,
+                        "https://npo.ecc.ac.jp/activities/index.php?c=topics_view&pk=1709003397&cn=8",
+                        "2024年中崎町キャンドルナイト(済美冬まつり)"
+                      )
+                    }
                   >
                     2023年度 中崎町キャンドルナイト ポスター 準グランプリ受賞
                   </a>
@@ -180,13 +188,13 @@ export default function Profile() {
                 <li>
                   <a
                     href="https://html5award.com/award2023"
-                    // onClick={(event) =>
-                    //   awardLink(
-                    //     event,
-                    //     "https://html5award.com/award2023",
-                    //     "2023年度 専門学校HTML5作品アワード"
-                    //   )
-                    // }
+                    onClick={(event) =>
+                      awardLink(
+                        event,
+                        "https://html5award.com/award2023",
+                        "2023年度 専門学校HTML5作品アワード"
+                      )
+                    }
                   >
                     2023年度 専門学校HTML5作品アワード 入選
                   </a>
@@ -195,13 +203,13 @@ export default function Profile() {
                 <li>
                   <a
                     href="https://hacku.yahoo.co.jp/hacku2024_tokyo2/"
-                    // onClick={(event) =>
-                    //   awardLink(
-                    //     event,
-                    //     "https://hacku.yahoo.co.jp/hacku2024_tokyo2/",
-                    //     "2024年度 Open Hack U 2024 TOKYO vol.2"
-                    //   )
-                    // }
+                    onClick={(event) =>
+                      awardLink(
+                        event,
+                        "https://hacku.yahoo.co.jp/hacku2024_tokyo2/",
+                        "2024年度 Open Hack U 2024 TOKYO vol.2"
+                      )
+                    }
                   >
                     2024年度 Open Hack U 2024 TOKYO vol.2 最優秀賞受賞
                   </a>
