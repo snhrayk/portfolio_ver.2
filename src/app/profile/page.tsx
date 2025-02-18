@@ -9,10 +9,27 @@ import paint from "../../../public/img/paint_profile_myfav.svg";
 import movie from "../../../public/img/movie_profile_myfav.svg";
 
 export default function Profile() {
-  const awardLink = (event, href, windowName) => {
+  const awardLink = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    windowName: string
+  ) => {
     event.preventDefault();
     window.open(href, windowName);
   };
+
+  const programmingLanguages = [
+    "html",
+    "css",
+    "scss",
+    "js",
+    "react",
+    "next.js",
+    "pug",
+    "PHP",
+    "firebase",
+    "SQL",
+  ];
 
   return (
     <>
@@ -58,16 +75,9 @@ export default function Profile() {
                 <div className={styles.programming}>
                   <h3>programming language</h3>
                   <div className={styles.languageWrap}>
-                    <p>html</p>
-                    <p>css</p>
-                    <p>scss</p>
-                    <p>js</p>
-                    <p>react</p>
-                    <p>next.js</p>
-                    <p>pug</p>
-                    <p>PHP</p>
-                    <p>firebase</p>
-                    <p>SQL</p>
+                    {programmingLanguages.map((lang) => (
+                      <p key={lang}>{lang}</p>
+                    ))}
                   </div>
                 </div>
                 <div className={styles.software}>
