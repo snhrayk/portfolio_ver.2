@@ -1,18 +1,18 @@
-@import "../styles/common.scss";
+@use "../styles/common";
 
 .closeBtn {
   width: 1.6vw;
   min-width: 2.4rem;
   height: auto;
   aspect-ratio: 1/1;
-  border-top: 1px solid $white;
-  border-left: 1px solid $white;
-  border-right: 1px solid $black;
-  border-bottom: 1px solid $black;
+  border-top: 1px solid common.$white;
+  border-left: 1px solid common.$white;
+  border-right: 1px solid common.$black;
+  border-bottom: 1px solid common.$black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $shadowLine;
+  background-color: common.$shadowLine;
   &:hover {
     cursor: url("/img/cursor_click.png"), pointer;
   }
@@ -25,9 +25,9 @@
 
 // クリックしたとき
 .closeBtn:active {
-  background-color: $gray;
-  border-top: 1px solid $black;
-  border-left: 1px solid $black;
+  background-color: common.$gray;
+  border-top: 1px solid common.$black;
+  border-left: 1px solid common.$black;
   border-right: none;
   border-bottom: none;
 }

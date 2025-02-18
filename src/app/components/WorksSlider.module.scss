@@ -1,4 +1,4 @@
-@import "../styles/common.scss";
+@use "../styles/common";
 
 .mySwiper {
   width: 100%;
@@ -13,5 +13,5 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: $sub !important; // 矢印の色をオレンジに変更
+  color: common.$sub !important; // 矢印の色をオレンジに変更
 }

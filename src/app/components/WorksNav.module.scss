@@ -1,27 +1,27 @@
-@import "../styles/common.scss";
+@use "../styles/common";
 
 .navWrap {
   width: 100%;
   height: calc(80.5vh - 12vh);
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  border-right: 2px solid $black;
-  background-color: $worksNav;
+  border-right: 2px solid common.$black;
+  background-color: common.$worksNav;
   .nav {
     li {
       padding: 2vh 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: $s;
-      font-family: $font;
+      font-size: common.$s;
+      font-family: common.$font;
       &:hover {
-        background: $bgBlur;
+        background: common.$bgBlur;
         cursor: url("/img/cursor_click.png"), pointer;
       }
       &.active {
         font-weight: bold;
-        color: $pink;
+        color: common.$pink;
       }
     }
   }

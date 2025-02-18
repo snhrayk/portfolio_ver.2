@@ -1,4 +1,4 @@
-@import "../styles/common.scss";
+@use "../styles/common";
 
 .borderTop {
   width: 100vw;
@@ -6,16 +6,16 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  border-top: 2px solid $shadowLine;
+  border-top: 2px solid common.$shadowLine;
   .footerWrap {
     width: inherit;
     height: inherit;
-    background-color: $main;
+    background-color: common.$main;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid $black;
-    border-bottom: 2px solid $black;
+    border-top: 2px solid common.$black;
+    border-bottom: 2px solid common.$black;
     .snsWrap {
       display: flex;
       margin-left: 10vw;
@@ -37,8 +37,8 @@
     p {
       margin-right: 10vw;
       small {
-        color: white;
-        font-family: $font;
+        color: common.$white;
+        font-family: common.$font;
         font-weight: 500;
         font-size: 2rem;
       }

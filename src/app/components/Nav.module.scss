@@ -1,4 +1,4 @@
-@import "../styles/common.scss";
+@use "../styles/common";
 
 .navWrap {
   position: fixed;
@@ -26,24 +26,24 @@
     }
     p {
       font-size: 1.6rem;
-      font-family: $font;
+      font-family: common.$font;
       font-weight: 500;
-      color: $black;
+      color: common.$black;
       margin: 0;
     }
     &:hover {
       img {
         cursor: url("/img/cursor_click.png"), pointer;
-        background-color: $bgBlur;
+        background-color: common.$bgBlur;
         border-radius: 4px;
-        outline: 2px solid $shadowLine;
+        outline: 2px solid common.$shadowLine;
         outline-offset: -2px;
       }
       p {
-        background-color: $pink;
+        background-color: common.$pink;
         border-radius: 4px;
         padding: 0 0.4rem;
-        color: $white;
+        color: common.$white;
       }
     }
   }

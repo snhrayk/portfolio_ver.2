@@ -1,9 +1,9 @@
-@import "../styles/common.scss";
+@use "../styles/common";
 
 .windowWrap {
   @extend %windowWrap;
   .pageArea {
-    background: url(/img/bg-line.svg) repeat, $white;
+    background: url(/img/bg-line.svg) repeat, common.$white;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 12vh calc(80.5vh - 12vh);
@@ -18,8 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $sub;
-  border-bottom: 2px solid $black;
+  background-color: common.$sub;
+  border-bottom: 2px solid common.$black;
   a {
     width: 12%;
     height: auto;
@@ -54,8 +54,8 @@
     height: auto;
     aspect-ratio: 1.4141/1;
     object-fit: cover;
-    border: 2px solid $black;
-    background-color: $white;
+    border: 2px solid common.$black;
+    background-color: common.$white;
     position: relative;
   }
   // .awardImg {
@@ -66,13 +66,13 @@
   // }
   h2 {
     margin: 0.8rem 0;
-    font-size: $m;
-    font-family: $font;
+    font-size: common.$m;
+    font-family: common.$font;
   }
   .explain {
     height: 6vh;
-    font-size: $ss;
-    font-family: $subFont;
+    font-size: common.$ss;
+    font-family: common.$subFont;
     margin-bottom: 1.6rem;
   }
   .btnWrap {
@@ -82,16 +82,16 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 0.8rem;
-    font-size: $s;
-    font-family: $subFont;
+    font-size: common.$s;
+    font-family: common.$subFont;
     .workDate {
       width: 25%;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0.8rem 0;
-      background-color: $white;
-      border: 2px solid $black;
+      background-color: common.$white;
+      border: 2px solid common.$black;
       border-radius: 6px;
     }
     a {
@@ -100,12 +100,12 @@
       justify-content: center;
       align-items: center;
       padding: 0.8rem 0;
-      border: 2px solid $black;
-      background-color: $main;
-      color: $white;
+      border: 2px solid common.$black;
+      background-color: common.$main;
+      color: common.$white;
       border-radius: 6px;
       &:hover {
-        background-color: $pink;
+        background-color: common.$pink;
         cursor: url("/img/cursor_click.png"), pointer;
       }
     }
