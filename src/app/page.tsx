@@ -10,9 +10,9 @@ export default function Home() {
         </div>
         <div className={styles.pageArea}>
           <p>
-            画面右にあるアイコンをクリックすると
+            画面右側のアイコンをクリックすることで
             <br />
-            各ページに遷移できます
+            各ページをご覧いただけます
           </p>
           <span>※Contactをクリックするとメールが起動します</span>
         </div>
