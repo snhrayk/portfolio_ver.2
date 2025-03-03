@@ -37,15 +37,6 @@ export default function Works() {
                       className={styles.workImg}
                     />
                   )}
-                  {/* {work.awardImg && (
-                    <Image
-                      src={work.img}
-                      alt={work.title}
-                      width={297}
-                      height={210}
-                      className={styles.workImg}
-                    />
-                  )} */}
                   <h2>{work.title}</h2>
                   <p className={styles.explain}>{work.explain}</p>
                   <div className={styles.btnWrap}>

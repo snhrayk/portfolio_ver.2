@@ -21,6 +21,15 @@ export default function WorksDetail() {
     return <p>作品が見つかりません。</p>;
   }
 
+  const webSiteLink = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    windowName: string
+  ) => {
+    event.preventDefault();
+    window.open(href, windowName);
+  };
+
   return (
     <div className={styles.windowWrap}>
       <div className={styles.bar}>
@@ -83,7 +92,13 @@ export default function WorksDetail() {
             </ul>
             <div className={styles.btnWrap}>
               <p className={styles.term}>{work.date}</p>
-              <Link href={work.workUrl} className={styles.siteBtn}>
+              <Link
+                href={work.workUrl}
+                onClick={(event) =>
+                  webSiteLink(event, work.workUrl, work.title)
+                }
+                className={styles.siteBtn}
+              >
                 サイトを見る
               </Link>
             </div>
