@@ -286,12 +286,12 @@ const worksData = [
   // くろのす(現在はRide Clock)
   {
     id: 10,
-    title: "くろのす(現在はRide Clock)",
+    title: "Ride Clock",
     catchCopy: "準備中です",
     date: "2年夏期",
     img: "/img/noImg_works.png",
     awardImg: "",
-    tag: ["受賞作品", "チーム制作"],
+    tag: ["受賞作品", "チーム制作", "デザイン"],
     period: "制作期間",
     // 使用言語
     codingIcons: ["/img/"],
@@ -400,7 +400,7 @@ const worksData = [
   {
     id: 14,
     title: "ポートフォリオ ver.2",
-    catchCopy: "現在制作中です",
+    catchCopy: "コードを簡略化して、ui/uxによりこだわったポートフォリオ",
     date: "2年後期",
     img: "/img/noImg_works.png",
     tag: ["その他"],

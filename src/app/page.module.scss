@@ -1,8 +1,8 @@
 @use "./styles/common" as *;
 
 .windowWrap {
-  width: 40vw;
-  height: 48vh;
+  width: 32vw;
+  height: 40vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -31,7 +31,7 @@
   }
   .pageArea {
     width: 100%;
-    height: 40.5vh;
+    height: 33vh;
     overflow-y: scroll;
     background-color: $white;
     display: flex;

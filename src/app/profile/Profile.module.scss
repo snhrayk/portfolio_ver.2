@@ -91,7 +91,11 @@
   }
   .profileRight {
     width: 40%;
-    padding: 6vh 2vw 0;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2vw;
     .skills {
       h2 {
         font-size: $ll;
