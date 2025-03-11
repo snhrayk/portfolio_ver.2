@@ -38,7 +38,12 @@ export default function Works() {
                     />
                   )}
                   <h2>{work.title}</h2>
-                  <p className={styles.explain}>{work.explain}</p>
+                  <p className={styles.catchCopy}>{work.catchCopy}</p>
+                  <ul className={styles.tagWrap}>
+                    {work.tag.map((tag, index) => (
+                      <li key={`tag-${index}`}>#{tag}</li>
+                    ))}
+                  </ul>
                   <div className={styles.btnWrap}>
                     <p className={styles.workDate}>{work.date}</p>
                     <Link href={`/works/${work.id}`}>詳細を見る</Link>

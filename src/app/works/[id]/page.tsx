@@ -49,8 +49,13 @@ export default function WorksDetail() {
           </div>
           <div className={styles.data}>
             <h3>{work.title}</h3>
+            <p className={styles.catchCopy}>{work.catchCopy}</p>
             <p className={styles.date}>{work.period}</p>
-            <p className={styles.mainExplain}>{work.explain}</p>
+            <ul className={styles.tagList}>
+              {work.tag.map((tag, index) => (
+                <li key={index}>#{tag}</li>
+              ))}
+            </ul>
             <ul className={styles.usedWrap}>
               {work.codingIcons.map((coding, index) => {
                 const techName = coding
@@ -101,6 +106,28 @@ export default function WorksDetail() {
               >
                 サイトを見る
               </Link>
+            </div>
+            <Link
+              href={work.githubUrl}
+              onClick={(event) =>
+                webSiteLink(event, work.githubUrl, work.title)
+              }
+              className={styles.githubBtn}
+            >
+              <span>github</span>-{work.title}
+            </Link>
+            {/* 作品概要 */}
+            <div className={styles.summaryWrap}>
+              <h4>作品概要</h4>
+              <p className={styles.workSummary}>{work.workSummary}</p>
+              <h4>こだわった点</h4>
+              <p className={styles.workSummary}>{work.point}</p>
+              <h4>学び</h4>
+              <p className={styles.workSummary}>{work.learned}</p>
+              <h4>反省点</h4>
+              <p className={styles.workSummary}>{work.reflection}</p>
+              <h4>その他</h4>
+              <p className={styles.workSummary}>{work.other}</p>
             </div>
           </div>
         </div>

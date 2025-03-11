@@ -8,7 +8,10 @@ export default function WorksNav() {
         <li>受賞作品</li>
         <li>個人制作</li>
         <li>チーム制作</li>
-        <li>その他</li>
+        <li>Webデザイン</li>
+        <li>Ui/Uxデザイン</li>
+        <li>グラフィックデザイン</li>
+        <li>react・next.js</li>
       </ul>
     </div>
   );
