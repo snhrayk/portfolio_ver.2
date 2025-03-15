@@ -231,19 +231,19 @@ const worksData = [
   {
     id: 8,
     title: "歴てく",
-    catchCopy: "準備中です",
+    catchCopy: "",
     date: "2年前期",
-    img: "/img/noImg_works.png",
-    tag: ["チーム制作"],
-    period: "制作期間",
+    img: "/img/rekiteku_heading.webp",
+    tag: ["チーム制作", "Webデザイン", "コーディング"],
+    period: "2024.04~2024.07",
     // 使用言語
-    codingIcons: ["/img/"],
-    designIcons: [""],
+    codingIcons: ["/img/react_works.svg", "/img/firebase_works.svg"],
+    designIcons: ["figma", "Ai"],
     // 画像
-    slideImg: ["/img/"],
+    slideImg: ["/img/rekiteku_heading.webp"],
     // URL
-    workUrl: "",
-    githubUrl: "",
+    workUrl: "https://reki-teku.vercel.app/",
+    githubUrl: "https://github.com/demonic29/team_reactors",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // こだわりポイント
@@ -262,16 +262,16 @@ const worksData = [
     catchCopy: "準備中です",
     date: "2年前期",
     img: "/img/noImg_works.png",
-    tag: ["個人制作"],
-    period: "制作期間",
+    tag: ["個人制作", "ui/uxデザイン", "コーディング"],
+    period: "2024.04~2024.07",
     // 使用言語
-    codingIcons: ["/img/"],
-    designIcons: [""],
+    codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
+    designIcons: ["figma", "Ai"],
     // 画像
     slideImg: ["/img/"],
     // URL
-    workUrl: "",
-    githubUrl: "",
+    workUrl: "https://dental-guide.vercel.app/",
+    githubUrl: "https://github.com/snhrayk/CW3-DentalGuide",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // こだわりポイント
@@ -290,12 +290,11 @@ const worksData = [
     catchCopy: "準備中です",
     date: "2年夏期",
     img: "/img/noImg_works.png",
-    awardImg: "",
-    tag: ["受賞作品", "チーム制作", "デザイン"],
+    tag: ["受賞作品", "チーム制作", "ui/uxデザイン"],
     period: "制作期間",
     // 使用言語
     codingIcons: ["/img/"],
-    designIcons: [""],
+    designIcons: ["figma", "Ai"],
     // 画像
     slideImg: ["/img/"],
     // URL

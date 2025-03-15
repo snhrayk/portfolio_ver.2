@@ -16,7 +16,7 @@ export default function Nav() {
         <Image src={works} alt="作品紹介" />
         <p>Works</p>
       </Link>
-      <Link href="mailto:ayaka21sunahara@gmail.com" className={styles.navChild}>
+      <Link href="/contact" className={styles.navChild}>
         <Image src={contact} alt="お問い合わせ" />
         <p>Contact</p>
       </Link>
