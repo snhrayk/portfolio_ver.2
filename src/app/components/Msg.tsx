@@ -1,11 +1,25 @@
 import styles from "./Msg.module.scss";
+import Image from "next/image";
+import close from "../../../public/img/close.svg";
+import { useState } from "react";
+
 export default function Msg() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
+  if (!isVisible) return null;
+
   return (
     <>
       <div className={styles.windowWrap}>
         <div className={styles.bar}>
           <h1>Welcome to my portfolio &lt;3</h1>
-          {/* <Close /> */}
+          <button className={styles.closeBtn} onClick={handleClose}>
+            <Image src={close} alt="閉じるボタン" />
+          </button>
         </div>
         <div className={styles.pageArea}>
           <p>
@@ -13,7 +27,6 @@ export default function Msg() {
             <br />
             各ページをご覧いただけます
           </p>
-          <span>※Contactをクリックするとメールが起動します</span>
         </div>
       </div>
     </>
