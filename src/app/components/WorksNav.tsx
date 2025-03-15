@@ -1,17 +1,37 @@
 import styles from "./WorksNav.module.scss";
 
-export default function WorksNav() {
+const categories = [
+  "すべて",
+  "受賞作品",
+  "個人制作",
+  "チーム制作",
+  "Webデザイン",
+  "Ui/Uxデザイン",
+  "グラフィックデザイン",
+  "コーディング",
+];
+
+interface WorksNavProps {
+  setSelectedCategory: (category: string) => void;
+  selectedCategory: string;
+}
+
+export default function WorksNav({
+  selectedCategory,
+  setSelectedCategory,
+}: WorksNavProps) {
   return (
     <div className={styles.navWrap}>
       <ul className={styles.nav}>
-        <li>すべて</li>
-        <li>受賞作品</li>
-        <li>個人制作</li>
-        <li>チーム制作</li>
-        <li>Webデザイン</li>
-        <li>Ui/Uxデザイン</li>
-        <li>グラフィックデザイン</li>
-        <li>react・next.js</li>
+        {categories.map((category) => (
+          <li
+            key={category}
+            className={selectedCategory === category ? styles.active : ""}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </li>
+        ))}
       </ul>
     </div>
   );

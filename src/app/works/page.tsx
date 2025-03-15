@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Close from "../components/Close";
 import styles from "./Works.module.scss";
@@ -6,8 +7,17 @@ import logo from "../../../public/img/portfolio_logo.webp";
 import worksData from "../data/worksData";
 import Link from "next/link";
 import WorksNav from "../components/WorksNav";
+import { useState } from "react";
 
 export default function Works() {
+  const [selectedCategory, setSelectedCategory] = useState("すべて");
+
+  // フィルタリング処理
+  const filteredWorks =
+    selectedCategory === "すべて"
+      ? worksData
+      : worksData.filter((work) => work.tag.includes(selectedCategory));
+
   return (
     <>
       <div className={styles.windowWrap}>
@@ -23,9 +33,12 @@ export default function Works() {
               <Image src={logo} alt="ポートフォリオロゴ" />
             </Link>
           </header>
-          <WorksNav />
+          <WorksNav
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+          />
           <div className={styles.worksArea}>
-            {worksData.map((work) => (
+            {filteredWorks.map((work) => (
               <section key={work.id} className={styles.workWrap}>
                 <div className={styles.workItem}>
                   {work.img && (

@@ -20,7 +20,7 @@
         cursor: url("/img/cursor_click.png"), pointer;
       }
       &.active {
-        font-weight: bold;
+        font-weight: bolder;
         color: common.$pink;
       }
     }

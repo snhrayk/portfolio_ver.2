@@ -5,7 +5,7 @@ import { useParams } from "next/navigation"; // useParams をインポート
 import Close from "@/app/components/Close";
 import Image from "next/image";
 import logo from "../../../../public/img/portfolio_logo.webp";
-import WorksNav from "@/app/components/WorksNav";
+// import WorksNav from "@/app/components/WorksNav";
 import Link from "next/link";
 import WorksSlider from "@/app/components/WorksSlider";
 import styles from "./WorksDetails.module.scss";
@@ -42,7 +42,7 @@ export default function WorksDetail() {
             <Image src={logo} alt="ポートフォリオロゴ" />
           </Link>
         </header>
-        <WorksNav />
+        {/* <WorksNav /> */}
         <div className={styles.worksArea}>
           <div className={styles.sliderWrap}>
             <WorksSlider slideImg={work.slideImg} />

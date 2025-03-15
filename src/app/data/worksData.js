@@ -81,7 +81,7 @@ const worksData = [
     catchCopy: "女性に向けた服・コスメのランダムショッピング通販サイト",
     date: "1年夏期",
     img: "/img/florita_heading.webp",
-    tag: ["チーム制作", "Webデザイン", "ui/uxデザイン", "コーディング"],
+    tag: ["チーム制作", "Webデザイン", "Ui/Uxデザイン", "コーディング"],
     period: "2023.09 (２週間)",
     // 使用言語
     codingIcons: ["/img/html_works.svg", "/img/sass_works.svg"],
@@ -109,7 +109,7 @@ const worksData = [
     catchCopy: "洋楽好きに向けたコミュニティWebアプリ",
     date: "1年後期",
     img: "/img/faveTag_heading.webp",
-    tag: ["個人制作", "ui/uxデザイン", "グラフィックデザイン", "コーディング"],
+    tag: ["個人制作", "Ui/Uxデザイン", "グラフィックデザイン", "コーディング"],
     period: "制作期間",
     // 使用言語
     codingIcons: [
@@ -145,7 +145,7 @@ const worksData = [
     tag: [
       "受賞作品",
       "チーム制作",
-      "ui/uxデザイン",
+      "Ui/Uxデザイン",
       "グラフィックデザイン",
       "コーディング",
     ],
@@ -261,8 +261,8 @@ const worksData = [
     title: "Dental Guide",
     catchCopy: "準備中です",
     date: "2年前期",
-    img: "/img/noImg_works.png",
-    tag: ["個人制作", "ui/uxデザイン", "コーディング"],
+    img: "/img/dentalGuide_heading.webp",
+    tag: ["個人制作", "Ui/Uxデザイン", "コーディング"],
     period: "2024.04~2024.07",
     // 使用言語
     codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
@@ -289,9 +289,9 @@ const worksData = [
     title: "Ride Clock",
     catchCopy: "準備中です",
     date: "2年夏期",
-    img: "/img/noImg_works.png",
-    tag: ["受賞作品", "チーム制作", "ui/uxデザイン"],
-    period: "制作期間",
+    img: "/img/rideClock_heading.webp",
+    tag: ["受賞作品", "チーム制作", "Ui/Uxデザイン"],
+    period: "2024.08",
     // 使用言語
     codingIcons: ["/img/"],
     designIcons: ["figma", "Ai"],
@@ -317,7 +317,7 @@ const worksData = [
     title: "えほんポケット",
     catchCopy: "現在制作中です",
     date: "2年後期",
-    img: "/img/noImg_works.png",
+    img: "/img/ehonPocket_heading.webp",
     tag: ["チーム制作"],
     period: "制作期間",
     // 使用言語
@@ -343,14 +343,14 @@ const worksData = [
   {
     id: 12,
     title: "ぐるめ旦過",
-    catchCopy: "現在制作中です",
+    catchCopy: "準備中です",
     date: "2年後期",
     img: "/img/noImg_works.png",
     tag: ["個人制作"],
-    period: "制作期間",
+    period: "2024.10~2025.01",
     // 使用言語
-    codingIcons: ["/img/"],
-    designIcons: [""],
+    codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
+    designIcons: ["figma", "Ai", "Ps"],
     // 画像
     slideImg: ["/img/"],
     // URL
@@ -374,7 +374,7 @@ const worksData = [
     catchCopy: "現在制作中です",
     date: "2年12月",
     img: "/img/noImg_works.png",
-    tag: ["チーム制作"],
+    tag: ["チーム制作", "Ui/Uxデザイン"],
     period: "制作期間",
     // 使用言語
     codingIcons: ["/img/"],
@@ -401,7 +401,7 @@ const worksData = [
     title: "ポートフォリオ ver.2",
     catchCopy: "コードを簡略化して、ui/uxによりこだわったポートフォリオ",
     date: "2年後期",
-    img: "/img/noImg_works.png",
+    img: "/img/portfolioVer2_heading.webp",
     tag: ["その他"],
     period: "制作期間",
     // 使用言語
