@@ -58,7 +58,7 @@ const worksData = [
     ],
     designIcons: ["Ai", "Ps", "Xd"],
     // 画像
-    slideImg: ["/img/herstel_heading.webp"],
+    slideImg: [""],
     // URL
     workUrl: "https://click.ecc.ac.jp/ecc/creator/sakuhin/2023/cw1/wd1a04/",
     githubUrl: "https://github.com/snhrayk/herstel",
