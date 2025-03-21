@@ -173,6 +173,7 @@
       font-size: $s;
       &:hover {
         background-color: $pink;
+        cursor: url("/img/cursor_click.png"), pointer;
       }
     }
   }

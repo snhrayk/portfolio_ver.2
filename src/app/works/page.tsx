@@ -13,11 +13,11 @@ export default function Works() {
   const [selectedCategory, setSelectedCategory] = useState("すべて");
 
   // フィルタリング処理
-  const filteredWorks =
+  const filteredWorks = (
     selectedCategory === "すべて"
       ? worksData
-      : worksData.filter((work) => work.tag.includes(selectedCategory));
-
+      : worksData.filter((work) => work.tag.includes(selectedCategory))
+  ).sort((a, b) => b.id - a.id);
   return (
     <>
       <div className={styles.windowWrap}>

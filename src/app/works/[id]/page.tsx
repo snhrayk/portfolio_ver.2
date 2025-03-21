@@ -8,7 +8,6 @@ import logo from "../../../../public/img/portfolio_logo.webp";
 import Link from "next/link";
 import WorksSlider from "@/app/components/WorksSlider";
 import styles from "./WorksDetails.module.scss";
-// import WorksDetailNav from "@/app/components/WorksDetailNav";
 
 export default function WorksDetail() {
   // URL パラメータを取得
@@ -44,7 +43,6 @@ export default function WorksDetail() {
             <Image src={logo} alt="ポートフォリオロゴ" />
           </Link>
         </header>
-        {/* <WorksDetailNav /> */}
         <div className={styles.worksArea}>
           <div className={styles.sliderWrap}>
             <WorksSlider slideImg={work.slideImg} />
@@ -121,16 +119,16 @@ export default function WorksDetail() {
 
             {/* 作品概要 */}
             <div className={styles.summaryWrap}>
+              <h4>役割</h4>
+              <p className={styles.workSummary}>{work.role}</p>
               <h4>作品概要</h4>
               <p className={styles.workSummary}>{work.workSummary}</p>
-              <h4>こだわった点</h4>
+              <h4>工夫点</h4>
               <p className={styles.workSummary}>{work.point}</p>
-              <h4>学び</h4>
-              <p className={styles.workSummary}>{work.learned}</p>
               <h4>反省点</h4>
               <p className={styles.workSummary}>{work.reflection}</p>
-              <h4>その他</h4>
-              <p className={styles.workSummary}>{work.other}</p>
+              <h4>振り返り</h4>
+              <p className={styles.workSummary}>{work.review}</p>
             </div>
           </div>
         </div>

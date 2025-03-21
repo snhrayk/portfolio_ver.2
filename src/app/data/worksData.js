@@ -51,11 +51,7 @@ const worksData = [
     period: "2023.04~2023.08",
     catchCopy: "紅茶定期便サービスのWebサイト",
     // 使用言語
-    codingIcons: [
-      "/img/html_works.svg",
-      "/img/css_works.svg",
-      "/img/js_works.svg",
-    ],
+    codingIcons: ["/img/html_works.svg", "/img/css_works.svg"],
     designIcons: ["Ai", "Ps", "Xd"],
     // 画像
     slideImg: [
@@ -67,24 +63,23 @@ const worksData = [
       "/img/herstel_works_set.png",
       "/img/herstel_works_package.webp",
     ],
-    // ワイヤーフレーム(pdf)
-    wireFrame: "/img/herstel_works_wireFrame.pdf",
-    // カンプ(pdf)
-    comp: "/img/herstel_works_comp.pdf",
     // URL
     workUrl: "https://click.ecc.ac.jp/ecc/creator/sakuhin/2023/cw1/wd1a04/",
     githubUrl: "https://github.com/snhrayk/herstel",
+    // 役割
+    role: "企画・サイトデザイン・ロゴデザイン・グラフィックデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary:
-      "コーヒーor紅茶となにかをかけ合わせて制作する授業課題でした。私は紅茶とサブスクリプションサービスを組み合わせたサービスを考え、Webサイトを制作しました。",
-    // こだわりポイント
-    point: "",
-    // 学び
-    learned: "",
+      "初めての個人制作で、コーヒーor紅茶となにかをかけ合わせて制作する授業課題でした。私は紅茶とサブスクリプションサービスを組み合わせたサービスを考え、日々の子育てで体力的・精神的な疲れを感じている主婦にターゲットを絞りました。紅茶のリラックス効果を使って、子育ての体力的精神的な疲れを軽減させる狙いです。",
+    // 工夫点
+    point:
+      "サイトに取り掛かる前に、コンテンツマップ(2/7)で情報の洗い出しを行いました。そうすることでサイトの構成が明確になり、情報の優先順位がつけやすくなりました。Webサイトのページ数は10ページ以上もありましたが、最後まで作り切りました。Webサイトやフライヤーを作成するだけでなく、よりイメージを具体的にするために紅茶が詰め合わされている箱のデザイン(6/7)や紅茶のパッケージ(コーヒーフレッシュのような形のものを想定)(7/7)も考えました。",
     // 反省点
-    reflection: "",
-    // その他
-    other: "",
+    reflection:
+      "質よりも量に走ってしまい、細かいところが甘いと感じます。アイコンの画質の粗さ、aタグの色設定、ページの余白など。また、実際にターゲットに当てはまる方に一人でもヒアリングして、内容をより深く理解してから制作に入るべきだったと反省しています。左上のロゴ(3/7)は情報量が多いため、もう少しシンプルにすることでロゴとしての認知度が上がると思いました。",
+    // 振り返り
+    review:
+      "今見ると、改善点ばかりが目立ちますが、そう感じるのは自分が成長した証拠だと思っております。",
   },
   // florita
   {
@@ -103,16 +98,19 @@ const worksData = [
     // URL
     workUrl: "",
     githubUrl: "https://github.com/SuzakiKaito/florita",
+    // 役割
+    role: "企画・LPデザイン・企画書・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
-    workSummary: "『女性が買い物中に学ぶ』をテーマに2週間で制作しました。",
-    // こだわりポイント
+    workSummary:
+      "初めてのチーム制作で先輩との合同チームでした。『女性が買い物中に学ぶ』をテーマに2週間で制作しました。ネット通販は「選択だらけで疲れる」という課題を解決させるために、ランダムで商品を表示することで、ユーザーが選択することを減らし、ストレス無く快適に買い物を楽しめるようにしました。ターゲットは女性の中でも、20~30代からで流行に敏感だけど仕事が忙しくてなかなかショッピングしに行く時間がとれない方を想定しました。",
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
-    reflection: "",
+    reflection:
+      "流れ見できるようなアプリは現在あるため、そのアプリとの差別化をもっと考えるべきでした。",
     // その他
-    other: "",
+    review:
+      "LPについて、sassやfigmaの使い方、企画書の作り方など授業よりも先に学ぶことが多く、大変勉強になりました。",
   },
   // faveTag
   {
@@ -131,21 +129,27 @@ const worksData = [
     ],
     designIcons: ["figma", "Ai", "Ps"],
     // 画像
-    slideImg: ["/img/faveTag_heading.webp"],
+    slideImg: [
+      "/img/faveTag_heading.webp",
+      "/img/faveTag_works_logo.png",
+      "/img/faveTag_works_cd.png",
+      "/img/faveTag_works_sticker.png",
+      "/img/faveTag_works_instagram.png",
+    ],
     // URL
     workUrl: "",
     githubUrl: "https://github.com/snhrayk/CW2-faveTag",
+    // 役割
+    role: "企画・サイトデザイン・ロゴデザイン・グラフィックデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary:
       "自分の好きな洋楽アーティストごとに作られたコミュニティスペースで、他のユーザーと交流できます。",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // ゆるめ旅
   {
@@ -170,17 +174,17 @@ const worksData = [
     // URL
     workUrl: "https://yurumetabi.vercel.app/",
     githubUrl: "https://github.com/kusanohatsumi/yurumetabi",
+    // 役割
+    role: "企画・コーディング",
     // 作品概要(作品の説明、課題、解決策)
     workSummary:
       "遠回りをして目的地の着くルート案内機能と見つけたスポットを撮影して共有できるスポット共有機能を合わせた新しいルート案内アプリです。",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // キャンドルナイトポスター
   {
@@ -200,16 +204,16 @@ const worksData = [
     // URLなし
     workUrl: "",
     githubUrl: "",
+    // 役割
+    role: "グラフィックデザイン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // ポートフォリオ ver.1
   {
@@ -228,16 +232,16 @@ const worksData = [
     // URL
     workUrl: "",
     githubUrl: "",
+    // 役割
+    role: "サイトデザイン・コーディング",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
-    point: "昔のパソコンのようなデザインになっています。",
-    // 学び
-    learned: "",
+    // 工夫点
+    point: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // 歴てく
   {
@@ -256,16 +260,16 @@ const worksData = [
     // URL
     workUrl: "https://reki-teku.vercel.app/",
     githubUrl: "https://github.com/demonic29/team_reactors",
+    // 役割
+    role: "",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // Dental Guide
   {
@@ -284,16 +288,16 @@ const worksData = [
     // URL
     workUrl: "https://dental-guide.vercel.app/",
     githubUrl: "https://github.com/snhrayk/CW3-DentalGuide",
+    // 役割
+    role: "",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // くろのす(現在はRide Clock)
   {
@@ -312,16 +316,16 @@ const worksData = [
     // URL
     workUrl: "",
     githubUrl: "",
+    // 役割
+    role: "",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // えほんポケット
   {
@@ -340,16 +344,16 @@ const worksData = [
     // URL
     workUrl: "",
     githubUrl: "",
+    // 役割
+    role: "",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // ぐるめ旦過
   {
@@ -357,7 +361,7 @@ const worksData = [
     title: "ぐるめ旦過",
     catchCopy: "準備中です",
     date: "2年後期",
-    img: "/img/noImg_works.png",
+    img: "/img/gurumeTanga_heading.webp",
     tag: ["個人制作"],
     period: "2024.10~2025.01",
     // 使用言語
@@ -368,16 +372,16 @@ const worksData = [
     // URL
     workUrl: "",
     githubUrl: "",
+    // 役割
+    role: "",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // ECCダンジョン
   {
@@ -396,16 +400,16 @@ const worksData = [
     // URL
     workUrl: "",
     githubUrl: "",
+    // 役割
+    role: "",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
   // ポートフォリオ ver.2
   {
@@ -424,16 +428,16 @@ const worksData = [
     // URL
     workUrl: "",
     githubUrl: "",
+    // 役割
+    role: "",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
-    // こだわりポイント
+    // 工夫点
     point: "",
-    // 学び
-    learned: "",
     // 反省点
     reflection: "",
-    // その他
-    other: "",
+    // 振り返り
+    review: "",
   },
 ];
 
