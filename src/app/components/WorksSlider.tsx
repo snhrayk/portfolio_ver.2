@@ -30,7 +30,7 @@ export default function WorksSlider({ slideImg }: Props) {
       >
         {slideImg.map((img, index) => (
           <SwiperSlide key={index}>
-            <Image src={img} alt={`Slide ${index}`} width={297} height={210} />
+            <Image src={img} alt={`Slide ${index}`} width={891} height={630} />
           </SwiperSlide>
         ))}
       </Swiper>

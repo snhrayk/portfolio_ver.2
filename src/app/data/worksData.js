@@ -58,7 +58,19 @@ const worksData = [
     ],
     designIcons: ["Ai", "Ps", "Xd"],
     // 画像
-    slideImg: [""],
+    slideImg: [
+      "/img/herstel_heading.webp",
+      "/img/herstel_works_contentsMap.png",
+      "/img/herstel_works_logo.png",
+      "/img/herstel_works_flyer.png",
+      "/img/herstel_works_leaflet.png",
+      "/img/herstel_works_set.png",
+      "/img/herstel_works_package.webp",
+    ],
+    // ワイヤーフレーム(pdf)
+    wireFrame: "/img/herstel_works_wireFrame.pdf",
+    // カンプ(pdf)
+    comp: "/img/herstel_works_comp.pdf",
     // URL
     workUrl: "https://click.ecc.ac.jp/ecc/creator/sakuhin/2023/cw1/wd1a04/",
     githubUrl: "https://github.com/snhrayk/herstel",

@@ -45,8 +45,8 @@ export default function Works() {
                     <Image
                       src={work.img}
                       alt={work.title}
-                      width={297}
-                      height={210}
+                      width={594}
+                      height={420}
                       className={styles.workImg}
                     />
                   )}

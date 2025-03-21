@@ -5,10 +5,10 @@ import { useParams } from "next/navigation"; // useParams をインポート
 import Close from "@/app/components/Close";
 import Image from "next/image";
 import logo from "../../../../public/img/portfolio_logo.webp";
-// import WorksNav from "@/app/components/WorksNav";
 import Link from "next/link";
 import WorksSlider from "@/app/components/WorksSlider";
 import styles from "./WorksDetails.module.scss";
+// import WorksDetailNav from "@/app/components/WorksDetailNav";
 
 export default function WorksDetail() {
   // URL パラメータを取得
@@ -33,7 +33,9 @@ export default function WorksDetail() {
   return (
     <div className={styles.windowWrap}>
       <div className={styles.bar}>
-        <h1>Works / {work.title}</h1>
+        <h1>
+          Works (<span>作品紹介</span>) &gt; {work.title}
+        </h1>
         <Close />
       </div>
       <div className={styles.pageArea}>
@@ -42,7 +44,7 @@ export default function WorksDetail() {
             <Image src={logo} alt="ポートフォリオロゴ" />
           </Link>
         </header>
-        {/* <WorksNav /> */}
+        {/* <WorksDetailNav /> */}
         <div className={styles.worksArea}>
           <div className={styles.sliderWrap}>
             <WorksSlider slideImg={work.slideImg} />
@@ -116,6 +118,7 @@ export default function WorksDetail() {
             >
               <span>github</span>-{work.title}
             </Link>
+
             {/* 作品概要 */}
             <div className={styles.summaryWrap}>
               <h4>作品概要</h4>
