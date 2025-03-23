@@ -57,7 +57,7 @@ export default function WorksDetail() {
               ))}
             </ul>
             <ul className={styles.usedWrap}>
-              {work.type === "グラフィック"
+              {work.type === "その他"
                 ? ""
                 : work.codingIcons.map((coding, index) => {
                     const techName = coding
@@ -104,7 +104,7 @@ export default function WorksDetail() {
             </ul>
             <div className={styles.btnWrap}>
               <p className={styles.term}>{work.date}</p>
-              {work.type === "グラフィック" ? (
+              {work.type === "その他" ? (
                 <p className={styles.graphicBtn}>サイトはありません</p>
               ) : (
                 <Link
@@ -114,13 +114,13 @@ export default function WorksDetail() {
                   }
                   className={styles.siteBtn}
                 >
-                  {work.type === "Webサイト"
+                  {work.type === "webサイト"
                     ? "Webサイトを見る"
                     : "Webアプリを見る"}
                 </Link>
               )}
             </div>
-            {work.type === "グラフィック" ? (
+            {work.type === "その他" ? (
               ""
             ) : (
               <Link

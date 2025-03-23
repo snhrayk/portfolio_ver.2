@@ -1,3 +1,5 @@
+import { type } from "os";
+
 const worksData = [
   // herstel(完了)
   {
@@ -242,7 +244,7 @@ const worksData = [
     workUrl: "https://reki-teku.vercel.app/",
     githubUrl: "https://github.com/demonic29/team_reactors",
     // 役割
-    role: "",
+    role: "企画・サイトデザイン・ロゴデザイン・コーディングデザイン・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // 工夫点
@@ -265,12 +267,12 @@ const worksData = [
     codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
     designIcons: ["figma", "Ai"],
     // 画像
-    slideImg: ["/img/"],
+    slideImg: ["/img/dentalGuide_heading.webp"],
     // URL
     workUrl: "https://dental-guide.vercel.app/",
     githubUrl: "https://github.com/snhrayk/CW3-DentalGuide",
     // 役割
-    role: "",
+    role: "企画・ui/uxデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // 工夫点
@@ -284,7 +286,7 @@ const worksData = [
   {
     id: 10,
     title: "Ride Clock",
-    catchCopy: "準備中です",
+    catchCopy: "最大１時間後までの電車時刻が分かるウィジェット",
     date: "2年夏期",
     img: "/img/rideClock_heading.webp",
     tag: ["受賞作品", "チーム制作", "Ui/Uxデザイン"],
@@ -293,12 +295,13 @@ const worksData = [
     codingIcons: ["/img/"],
     designIcons: ["figma", "Ai"],
     // 画像
-    slideImg: ["/img/"],
+    slideImg: ["/img/rideClock_heading.webp"],
     // URL
+    type: "その他",
     workUrl: "",
     githubUrl: "",
     // 役割
-    role: "",
+    role: "ui/uxデザイン・ロゴデザイン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // 工夫点
@@ -312,21 +315,26 @@ const worksData = [
   {
     id: 11,
     title: "えほんポケット",
-    catchCopy: "現在制作中です",
+    catchCopy: "曖昧な記憶でも絵本を探せられるWebアプリ",
     date: "2年後期",
     img: "/img/ehonPocket_heading.webp",
-    tag: ["チーム制作"],
-    period: "制作期間",
+    tag: ["チーム制作", "Ui/Uxデザイン", "コーディング"],
+    period: "2024.10~2024.01",
     // 使用言語
-    codingIcons: ["/img/"],
-    designIcons: [""],
+    codingIcons: [
+      "/img/nextjs_works.svg",
+      "/img/sass_works.svg",
+      "/img/firebase_works.svg",
+    ],
+    designIcons: ["figma", "Ai", "Ps"],
     // 画像
-    slideImg: ["/img/"],
+    slideImg: ["/img/ehonPocket_heading.webp"],
     // URL
-    workUrl: "",
-    githubUrl: "",
+    type: "webアプリ",
+    workUrl: "https://2024-teampj-app.vercel.app/",
+    githubUrl: "https://github.com/kmii12/2024-teampj",
     // 役割
-    role: "",
+    role: "リーダー・企画・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // 工夫点
@@ -340,7 +348,7 @@ const worksData = [
   {
     id: 12,
     title: "ぐるめ旦過",
-    catchCopy: "準備中です",
+    catchCopy: "福岡県北九州市にある市場の紹介サイト",
     date: "2年後期",
     img: "/img/gurumeTanga_heading.webp",
     tag: ["個人制作"],
@@ -349,10 +357,11 @@ const worksData = [
     codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
     designIcons: ["figma", "Ai", "Ps"],
     // 画像
-    slideImg: ["/img/"],
+    slideImg: ["/img/gurumeTanga_heading.webp"],
     // URL
-    workUrl: "",
-    githubUrl: "",
+    type: "webサイト",
+    workUrl: "https://cw4-website.vercel.app/",
+    githubUrl: "https://github.com/snhrayk/cw4",
     // 役割
     role: "企画・サイトデザイン・ロゴデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
@@ -369,21 +378,24 @@ const worksData = [
   {
     id: 13,
     title: "ECCダンジョン",
-    catchCopy: "現在制作中です",
+    catchCopy: "オープンキャンパスイベント用のWebアプリ",
     date: "2年12月",
+    // figmaのモックアップを載せる
     img: "/img/noImg_works.png",
     tag: ["チーム制作", "Ui/Uxデザイン"],
-    period: "制作期間",
+    period: "2024.12",
     // 使用言語
     codingIcons: ["/img/"],
-    designIcons: [""],
+    designIcons: ["figma", "Ai"],
     // 画像
+    // 動作ごとのモックアップを載せる
     slideImg: ["/img/"],
     // URL
+    type: "webアプリ",
     workUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/ECC-Dungeon",
     // 役割
-    role: "",
+    role: "ui/uxデザイン・ロゴデザイン",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // 工夫点
@@ -400,18 +412,19 @@ const worksData = [
     catchCopy: "コードを簡略化して、ui/uxによりこだわったポートフォリオ",
     date: "2年後期",
     img: "/img/portfolioVer2_heading.webp",
-    tag: ["その他"],
-    period: "制作期間",
+    tag: ["Webデザイン", "コーディング"],
+    period: "2024.12~2025.03",
     // 使用言語
-    codingIcons: ["/img/"],
-    designIcons: [""],
+    codingIcons: ["/img/nextjs_works.svg", "/img/sass_works.svg"],
+    designIcons: ["figma", "Ai"],
     // 画像
-    slideImg: ["/img/"],
+    slideImg: ["/img/portfolioVer2_heading.webp"],
     // URL
-    workUrl: "",
-    githubUrl: "",
+    type: "webサイト",
+    workUrl: "https://portfolio-ver-2-mu.vercel.app/",
+    githubUrl: "https://github.com/snhrayk/portfolio_ver.2",
     // 役割
-    role: "",
+    role: "サイトデザイン、ロゴデザイン、コーディング",
     // 作品概要(作品の説明、課題、解決策)
     workSummary: "",
     // 工夫点
