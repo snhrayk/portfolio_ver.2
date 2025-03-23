@@ -57,22 +57,29 @@ export default function WorksDetail() {
               ))}
             </ul>
             <ul className={styles.usedWrap}>
-              {work.codingIcons.map((coding, index) => {
-                const techName = coding
-                  .match(/\/img\/(.*?)_works\.svg/)?.[1] // ファイル名から技術名を抽出
-                  ?.toLowerCase();
+              {work.type === "グラフィック"
+                ? ""
+                : work.codingIcons.map((coding, index) => {
+                    const techName = coding
+                      .match(/\/img\/(.*?)_works\.svg/)?.[1] // ファイル名から技術名を抽出
+                      ?.toLowerCase();
 
-                return (
-                  <li
-                    className={`${styles.usedApp} ${
-                      techName ? styles[techName] : ""
-                    }`}
-                    key={`coding-${index}`}
-                  >
-                    <Image src={coding} alt="使用技術" width={32} height={32} />
-                  </li>
-                );
-              })}
+                    return (
+                      <li
+                        className={`${styles.usedApp} ${
+                          techName ? styles[techName] : ""
+                        }`}
+                        key={`coding-${index}`}
+                      >
+                        <Image
+                          src={coding}
+                          alt="使用技術"
+                          width={32}
+                          height={32}
+                        />
+                      </li>
+                    );
+                  })}
               {work.designIcons.map((design, index) => {
                 const techName = design.toLowerCase(); // SCSSのクラス名と一致させる
 
@@ -97,26 +104,35 @@ export default function WorksDetail() {
             </ul>
             <div className={styles.btnWrap}>
               <p className={styles.term}>{work.date}</p>
-              <Link
-                href={work.workUrl}
-                onClick={(event) =>
-                  webSiteLink(event, work.workUrl, work.title)
-                }
-                className={styles.siteBtn}
-              >
-                サイトを見る
-              </Link>
+              {work.type === "グラフィック" ? (
+                <p className={styles.graphicBtn}>サイトはありません</p>
+              ) : (
+                <Link
+                  href={work.workUrl}
+                  onClick={(event) =>
+                    webSiteLink(event, work.workUrl, work.title)
+                  }
+                  className={styles.siteBtn}
+                >
+                  {work.type === "Webサイト"
+                    ? "Webサイトを見る"
+                    : "Webアプリを見る"}
+                </Link>
+              )}
             </div>
-            <Link
-              href={work.githubUrl}
-              onClick={(event) =>
-                webSiteLink(event, work.githubUrl, work.title)
-              }
-              className={styles.githubBtn}
-            >
-              <span>github</span>-{work.title}
-            </Link>
-
+            {work.type === "グラフィック" ? (
+              ""
+            ) : (
+              <Link
+                href={work.githubUrl}
+                onClick={(event) =>
+                  webSiteLink(event, work.githubUrl, work.title)
+                }
+                className={styles.githubBtn}
+              >
+                <span>github</span>-{work.title}
+              </Link>
+            )}
             {/* 作品概要 */}
             <div className={styles.summaryWrap}>
               <h4>役割</h4>

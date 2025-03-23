@@ -171,10 +171,10 @@ export default function Profile() {
               </div>
             </div>
             {/* 締めの3行 */}
-            <p className={styles.summaryText}>
+            {/* <p className={styles.summaryText}>
               デザインエンジニアを目指し、現在デザインとコーディングの両方を勉強しています。
               このスキルを活かし、仕事の場面ではデザイナーとエンジニアの架け橋となる役割を果たせます。また、仕事内容に応じてデザイナーやエンジニアとして柔軟に役割を切り替え、様々な場面で活躍できるのが強みだと考えています。
-            </p>
+            </p> */}
             {/* 受賞歴 */}
             <div className={styles.awardWrap}>
               <h3>
