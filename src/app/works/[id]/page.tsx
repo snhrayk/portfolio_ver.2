@@ -146,19 +146,6 @@ export default function WorksDetail() {
                     ランディングページ
                   </Link>
                 )}
-                {work.documentUrl === "無し" ? (
-                  ""
-                ) : (
-                  <Link
-                    href={work.documentUrl}
-                    onClick={(event) =>
-                      webSiteLink(event, work.documentUrl, work.title)
-                    }
-                    className={styles.linkBtn}
-                  >
-                    {work.documentName}
-                  </Link>
-                )}
                 {work.otherUrl === "無し" ? (
                   ""
                 ) : (
@@ -170,6 +157,19 @@ export default function WorksDetail() {
                     className={styles.linkBtn}
                   >
                     {work.otherName}
+                  </Link>
+                )}
+                {work.documentUrl === "無し" ? (
+                  ""
+                ) : (
+                  <Link
+                    href={work.documentUrl}
+                    onClick={(event) =>
+                      webSiteLink(event, work.documentUrl, work.title)
+                    }
+                    className={styles.linkBtn}
+                  >
+                    {work.documentName}
                   </Link>
                 )}
               </div>

@@ -52,8 +52,7 @@ const worksData = [
     review:
       "今見ると、改善点ばかりが目立ちますが、改善点が多いと感じるのは自分が成長した証拠だと思っております。herstelは授業で学んだhtmlやcssを初めてアウトプットした作品で、コーディングの楽しさを知るきっかけになりました。",
   },
-  // // florita
-  // // LPの崩れが気になるため、修正完了までコメントアウト
+  // // florita(LPの崩れが気になるため、修正完了までコメントアウト)
   // {
   //   id: 2,
   //   title: "florita",
@@ -143,7 +142,7 @@ const worksData = [
     review:
       "個人制作とチーム制作との両立の失敗を通して、自分の力量を知りました。次の作品から、時間配分に気をつけタスクの細分化を行いました。すると、デザインやコーディングの時間を確保ができ、作品のクオリティも向上しました。",
   },
-  // ゆるめ旅(lp追加以外完了)
+  // ゆるめ旅(完了)
   {
     id: 4,
     title: "ゆるめ旅",
@@ -230,7 +229,7 @@ const worksData = [
     review:
       "私が作成したポスターがフライヤーとなって、中崎町全体に貼られていたり配布されていたりするのを見たとき、やはり大変嬉しい気持ちになりました。また、準グランプリをいただいたことで、自分のデザイン力に自信を持つことができ、以降デザインするとき前向きに取り組むことができました。",
   },
-  // ポートフォリオ ver.1
+  // ポートフォリオ ver.1(完了)
   {
     id: 6,
     title: "ポートフォリオ ver.1",
@@ -238,7 +237,7 @@ const worksData = [
     date: "1年春期",
     img: "/img/portfolioVer1_heading.webp",
     tag: ["Webデザイン", "コーディング"],
-    period: "2024.02~2024.03",
+    period: "2024.02~2024.03(1ヶ月半)",
     // 使用言語
     codingIcons: ["/img/react_works.svg", "/img/sass_works.svg"],
     designIcons: ["figma", "Ai"],
@@ -257,16 +256,20 @@ const worksData = [
     // 役割
     role: "サイトデザイン・コーディング",
     // 作品概要(作品の説明、課題、解決策)
-    workSummary: "",
+    workSummary:
+      "レトロなパソコン画面風のデザイン。y2kデザイン、海外ぽさを感じるポップなカラーを使用することで、洋楽を通して海外風を好きになった私の個性を表現しています。",
     // 工夫点
-    point: "",
+    point:
+      "レトロなパソコンを感じられるように、ビット調のアイコンやフォントを使用しています。このフォントを全ての文字に適用してしまうと読みづらくなってしまうため、シンプルで読みやすいOsakaフォントも使用しています。",
     // 反省点
-    reflection: "",
+    reflection:
+      "企業の方がこのポートフォリオサイトを見た際に、私がどういう考えを持った人間なのかという必要な情報が少ないことが大きな反省点です。また、画像サイズが大きく読み込みに時間がかかってしまうことや、作品ごとにファイルを作成したためコード量が多いことも気になりました。そのため、ポートフォリオver.2ではその反省を活かし改善しています。",
     // 振り返り
-    review: "",
+    review:
+      "まだ使い慣れていないreactを使い一人でサイトを作りきったため、コーディングスキルが上がり自分のコーディング力に自信が持てました。",
   },
 
-  // 歴てく(残りスライド画像と仕様書データと反省点入力)
+  // 歴てく(一旦完了)
   {
     id: 8,
     title: "歴てく",
@@ -279,7 +282,6 @@ const worksData = [
     codingIcons: ["/img/react_works.svg", "/img/firebase_works.svg"],
     designIcons: ["figma", "Ai"],
     // 画像
-    // 体力面配慮の星
     slideImg: ["/img/rekiteku_heading.webp"],
     // URL
     type: "webサイト",
@@ -289,8 +291,8 @@ const worksData = [
     lpUrl: "無し",
     documentUrl: "/img/rekiteku_works_proposal.pdf",
     documentName: "仕様書",
-    otherUrl: "無し",
-    otherName: "",
+    otherUrl: "https://reki-teku.vercel.app/login",
+    otherName: "管理者画面",
     // 役割
     role: "企画・サイトデザイン(チーム全員で)・ロゴデザイン・コーディング(私達について・管理者のログイン画面)・仕様書作成・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
@@ -310,7 +312,7 @@ const worksData = [
   {
     id: 9,
     title: "Dental Guide",
-    catchCopy: "準備中です",
+    catchCopy: "毎回正しい歯磨きができるWebアプリ",
     date: "2年前期",
     img: "/img/dentalGuide_heading.webp",
     tag: ["個人制作", "Ui/Uxデザイン", "コーディング"],
@@ -319,7 +321,20 @@ const worksData = [
     codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
     designIcons: ["figma", "Ai"],
     // 画像
-    slideImg: ["/img/dentalGuide_heading.webp"],
+    slideImg: [
+      "/img/dentalGuide_heading.webp",
+      "/img/dentalGuide_works_concept.png",
+      "/img/dentalGuide_works_analysis_1.png",
+      "/img/dentalGuide_works_analysis_2.png",
+      "/img/dentalGuide_works_solution.png",
+      "/img/dentalGuide_works_howto.png",
+      "/img/dentalGuide_works_pageIdea.svg",
+      "/img/dentalGuide_works_function_1.png",
+      "/img/dentalGuide_works_function_2.png",
+      "/img/dentalGuide_works_revenue.png",
+      "/img/dentalGuide_works_reward.png",
+      "/img/dentalGuide_works_design.png",
+    ],
     // URL
     type: "webアプリ",
     workUrl: "https://dental-guide.vercel.app/",
