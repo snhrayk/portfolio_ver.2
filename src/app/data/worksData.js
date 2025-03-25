@@ -308,7 +308,7 @@ const worksData = [
     review:
       "私のチームのWebサイトは残念ながら選ばれませんでしたが、私が作成したロゴやgoogle my mapの仕様書が採用されたため大変嬉しかったです。",
   },
-  // Dental Guide
+  // Dental Guide(完了)
   {
     id: 9,
     title: "Dental Guide",
@@ -348,19 +348,23 @@ const worksData = [
     // 役割
     role: "企画・ui/uxデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
-    workSummary: "",
+    workSummary:
+      "私の歯磨きの仕方って正しいのかなと歯磨き中にふと思ったことがきっかけで、このWebアプリを制作しました。",
     // 工夫点
-    point: "",
+    point:
+      "歯磨きは歯を綺麗に保つことで、清潔感を連想させることから、白を基調とし余計な装飾を省いたデザインにしました。またページ遷移やナビゲーションバーにアニメーションを使うことで、心地よい操作感を感じてもらえるようにしました。",
     // 反省点
-    reflection: "",
+    reflection:
+      "apiの接続が上手くいかず、メイン機能の一部である音楽再生機能とニュース機能が実装できませんでした。また、ロゴをアプリデザインを行う前に作成してしまったことで、ロゴとアプリデザインの統一感がなくなってしまいました。",
     // 振り返り
-    review: "",
+    review:
+      "メイン機能を実装しきれなかったことが残念ですが、デザインにはこだわり、ユーザーが使いやすいアプリを作ることができました。また、spotify apiにリベンジします。",
   },
-  // くろのす(現在はRide Clock)
+  // Ride Clock(一旦完了反省点思い出したら追加)
   {
     id: 10,
     title: "Ride Clock",
-    catchCopy: "最大１時間後までの電車時刻が分かるウィジェット",
+    catchCopy: "電車の時刻表のUX向上に焦点を当てたウィジェット",
     date: "2年夏期",
     img: "/img/rideClock_heading.webp",
     tag: ["受賞作品", "チーム制作", "Ui/Uxデザイン"],
@@ -383,19 +387,22 @@ const worksData = [
     // 役割
     role: "ui/uxデザイン・ロゴデザイン",
     // 作品概要(作品の説明、課題、解決策)
-    workSummary: "",
+    workSummary:
+      "Open Hack U 2024 TOKYO vol.2に出場し、最優秀賞を受賞した作品です。また、技育展2024でも決勝大会まで進出しました。ITコースの先輩3人とチームを組み、私はデザイナーとして参加しました。このウィジェットは電車の時刻表のUX向上に焦点を当て、通勤・通学者をターゲットにしています。",
     // 工夫点
-    point: "",
+    point:
+      "アナログ時計のようなデザインにすることで、現在時刻から1時間以内までの発車時刻を直感的に把握できます。電車の種別(特急、快速、普通)ごとにメモリの色を変えているため、どの電車かが一目でわかります。",
     // 反省点
     reflection: "",
     // 振り返り
-    review: "",
+    review:
+      "初めてのハッカソンでしたが、最優秀賞を受賞できたことで、自分のデザイン力に自信を持つことができました。また、技育展で他の出場した方々と交流することができ、新たな刺激を受けることができました。",
   },
   // えほんポケット
   {
     id: 11,
     title: "えほんポケット",
-    catchCopy: "曖昧な記憶でも絵本を探せられるWebアプリ",
+    catchCopy: "幼い頃に読んだ懐かしい絵本を探すためWebアプリ",
     date: "2年後期",
     img: "/img/ehonPocket_heading.webp",
     tag: ["チーム制作", "Ui/Uxデザイン", "コーディング"],
@@ -408,7 +415,15 @@ const worksData = [
     ],
     designIcons: ["figma", "Ai", "Ps"],
     // 画像
-    slideImg: ["/img/ehonPocket_heading.webp"],
+    slideImg: [
+      "/img/ehonPocket_heading.webp",
+      "/img/ehonPocket_works_concept.png",
+      "/img/ehonPocket_works_effect.png",
+      "/img/ehonPocket_works_analysis.png",
+      "/img/ehonPocket_works_solution.png",
+      "/img/ehonPocket_works_function.png",
+      "/img/ehonPocket_works_design.png",
+    ],
     // URL
     type: "webアプリ",
     workUrl: "https://2024-teampj-app.vercel.app/",
@@ -430,14 +445,14 @@ const worksData = [
     // 振り返り
     review: "",
   },
-  // ぐるめ旦過
+  // ぐるめ旦過(完了)
   {
     id: 12,
     title: "ぐるめ旦過",
     catchCopy: "福岡県北九州市にある市場の紹介サイト",
     date: "2年後期",
     img: "/img/gurumeTanga_heading.webp",
-    tag: ["個人制作"],
+    tag: ["個人制作", "Webデザイン", "コーディング"],
     period: "2024.10~2025.01",
     // 使用言語
     codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
@@ -460,11 +475,13 @@ const worksData = [
     workSummary:
       "地方紹介サイトを作る授業課題でした。祖母が住む市にある市場で、幼い頃何度か訪れたことがあったため、旦過市場を選びました。",
     // 工夫点
-    point: "",
+    point:
+      "メイン機能であるグルメマップは、店の商品や予算、場所を知るだけではありません。気に入った店があればお気に入りに追加し、自分だけのマップを作成して予算も合計してくれるため実際に旦過市場に訪れる際に役立てることができます。",
     // 反省点
     reflection:
       "冬休みに実際にこの市場に行きリサーチをして、サイトに入れる情報をより具体的にする予定だったのですが、家の事情により行くことができませんでした。そのため、情報が具体的ではないところが多いまま制作を終えてしまいました。2年でmysqlを学び理解を深めるためにお店のデータベース用でmysqlを使おうとしたのですが、nextjsとmysqlの組み合わせにはバックエンド側でAPIの作成が必要だったため、代わりにfirebaseを使いました。",
-    review: "",
+    review:
+      "情報不足なため、また旦過市場に行くタイミングがあれば、内容の追加と修正を行いたいと思います。",
   },
   // ECCダンジョン(準備中)
   // {
