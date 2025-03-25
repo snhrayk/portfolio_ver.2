@@ -555,6 +555,50 @@ const worksData = [
     // 振り返り
     review: "",
   },
+  // Juice Timer
+  {
+    id: 15,
+    title: "Juice Timer",
+    catchCopy: "デザインエンジニアを意識しながら制作したWebアプリ",
+    date: "2年後期",
+    img: "/img/juiceTimer_heading.webp",
+    tag: ["習作", "ui/uxデザイン", "コーディング"],
+    period: "2024.10(1ヶ月)",
+    // 使用言語
+    codingIcons: ["/img/nextjs_works.svg", "/img/sass_works.svg"],
+    designIcons: ["figma", "Ai"],
+    // 画像
+    slideImg: [
+      "/img/juiceTimer_heading.webp",
+      "/img/juiceTimer_works_schedule.png",
+      "/img/juiceTimer_works_designEngineer_1.png",
+      "/img/juiceTimer_works_designEngineer_2.png",
+      "/img/juiceTimer_works_designEngineer_3.png",
+      "/img/juiceTimer_works_designEngineer_4.png",
+      "/img/juiceTimer_works_designEngineer_5.png",
+      "/img/juiceTimer_works_designSystem.webp",
+    ],
+    // URL
+    type: "webサイト",
+    workUrl: "https://oct-web-training.vercel.app/",
+    githubUrl: "https://github.com/snhrayk/Oct-WebTraining",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
+    // 役割
+    role: "ui/uxデザイン・コーディング・プレゼン",
+    // 作品概要(作品の説明、課題、解決策)
+    workSummary: "時間がテーマで1ヶ月で制作する授業課題でした",
+    // 工夫点
+    point: "",
+    // 反省点
+    reflection: "",
+    // 振り返り
+    review: "",
+  },
 ];
 
 export default worksData;
