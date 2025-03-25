@@ -1,5 +1,3 @@
-import { type } from "os";
-
 const worksData = [
   // herstel(完了)
   {
@@ -33,6 +31,12 @@ const worksData = [
     type: "webサイト",
     workUrl: "https://click.ecc.ac.jp/ecc/creator/sakuhin/2023/cw1/wd1a04/",
     githubUrl: "https://github.com/snhrayk/herstel",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "企画・サイトデザイン・ロゴデザイン・グラフィックデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
@@ -80,7 +84,7 @@ const worksData = [
   //   review:
   //     "LPについて、sassやfigmaの使い方、企画書の作り方など授業よりも先に学ぶことが多く、大変勉強になりました。",
   // },
-  // faveTag(サイトのリンク以外は完成)
+  // faveTag(サイトのリンク以外は完了)
   {
     id: 3,
     title: "fave#",
@@ -118,6 +122,12 @@ const worksData = [
     type: "webアプリ",
     workUrl: "",
     githubUrl: "https://github.com/snhrayk/CW2-faveTag",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "企画・サイトデザイン・ロゴデザイン・グラフィックデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
@@ -133,11 +143,11 @@ const worksData = [
     review:
       "個人制作とチーム制作との両立の失敗を通して、自分の力量を知りました。次の作品から、時間配分に気をつけタスクの細分化を行いました。すると、デザインやコーディングの時間を確保ができ、作品のクオリティも向上しました。",
   },
-  // ゆるめ旅
+  // ゆるめ旅(lp追加以外完了)
   {
     id: 4,
     title: "ゆるめ旅",
-    catchCopy: "あえて遠回りをして目的地に向かうルート案内アプリ",
+    catchCopy: "目的地に世界1遅く到着するルート案内Webアプリ",
     date: "1年後期",
     img: "/img/yurumetabi_heading.webp",
     tag: ["受賞作品", "チーム制作", "Ui/Uxデザイン", "コーディング"],
@@ -146,22 +156,39 @@ const worksData = [
     codingIcons: ["/img/nextjs_works.svg", "/img/firebase_works.svg"],
     designIcons: ["figma", "Ai"],
     // 画像
-    slideImg: ["/img/yurumetabi_heading.webp"],
+    slideImg: [
+      "/img/yurumetabi_heading.webp",
+      "/img/yurumetabi_works_concept.png",
+      "/img/yurumetabi_works_analysis.png",
+      "/img/yurumetabi_works_solution.png",
+      "/img/yurumetabi_works_howto.png",
+      "/img/yurumetabi_works_design.png",
+      "/img/yurumetabi_works_cognition.png",
+    ],
     // URL
     type: "webアプリ",
     workUrl: "https://yurumetabi.vercel.app/",
     githubUrl: "https://github.com/kusanohatsumi/yurumetabi",
+    // その他URL
+    lpUrl: "https://koudaihirata.github.io/yurumetabi-LP/",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
-    role: "企画・コーディング",
+    role: "企画・コーディング(マイページ)",
     // 作品概要(作品の説明、課題、解決策)
     workSummary:
-      "遠回りをして目的地の着くルート案内機能と見つけたスポットを撮影して共有できるスポット共有機能を合わせた新しいルート案内アプリです。",
+      "html5アワードに応募し、入選した作品。旅行のマンネリ化と観光地が思っていたのと違うという課題を解決するために、あえて遠回りをさせて景色を楽しんだり寄り道しながら目的地へ向かう新しいルート案内アプリを制作しました。",
     // 工夫点
-    point: "",
+    point:
+      "このチーム制作で初めて、nextjsとfirebaseを触りました。初めてで分からないことだらけでしたが先輩から丁寧に教えていただいたおかげで、なんとか形にすることができ、スキルも身につきました。",
     // 反省点
-    reflection: "",
+    reflection:
+      "新しい技術を学びながらの制作だったため、私が担当の機能を完成させるまでに時間がかかってしまいました。その結果、作業がチーム制作に偏ってしまい、個人制作の作業時間が減ってしまいました。",
     // 振り返り
-    review: "",
+    review:
+      "nextjsはhtml・css・jsと比べてコードの書き方がより複雑で、一時は挫折しかけましたが、諦めずに最後まで取り組みました。おかげで現在nextjsとfirebaseを使ったwebサイトやwebアプリを一人で制作できるところまで成長できています。",
   },
   // キャンドルナイトポスター(完了)
   {
@@ -179,9 +206,15 @@ const worksData = [
     // 画像
     slideImg: ["/img/candleNight_heading.webp"],
     // URLなし
-    type: "グラフィック",
+    type: "その他",
     workUrl: "",
     githubUrl: "",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "グラフィックデザイン",
     // 作品概要(作品の説明、課題、解決策)
@@ -208,12 +241,19 @@ const worksData = [
     period: "2024.02~2024.03",
     // 使用言語
     codingIcons: ["/img/react_works.svg", "/img/sass_works.svg"],
-    designIcons: ["figma"],
+    designIcons: ["figma", "Ai"],
     // 画像
     slideImg: ["/img/portfolioVer1_heading.webp"],
     // URL
-    workUrl: "",
-    githubUrl: "",
+    type: "webサイト",
+    workUrl: "https://spic-port-folio.vercel.app/",
+    githubUrl: "https://github.com/snhrayk/portfolio",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "サイトデザイン・コーディング",
     // 作品概要(作品の説明、課題、解決策)
@@ -226,11 +266,11 @@ const worksData = [
     review: "",
   },
 
-  // 歴てく
+  // 歴てく(残りスライド画像と仕様書データと反省点入力)
   {
     id: 8,
     title: "歴てく",
-    catchCopy: "",
+    catchCopy: "初めてクライアントの方から依頼を受けて制作したWebサイト",
     date: "2年前期",
     img: "/img/rekiteku_heading.webp",
     tag: ["チーム制作", "Webデザイン", "コーディング"],
@@ -239,20 +279,32 @@ const worksData = [
     codingIcons: ["/img/react_works.svg", "/img/firebase_works.svg"],
     designIcons: ["figma", "Ai"],
     // 画像
+    // 体力面配慮の星
     slideImg: ["/img/rekiteku_heading.webp"],
     // URL
+    type: "webサイト",
     workUrl: "https://reki-teku.vercel.app/",
     githubUrl: "https://github.com/demonic29/team_reactors",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "/img/rekiteku_works_proposal.pdf",
+    documentName: "仕様書",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
-    role: "企画・サイトデザイン・ロゴデザイン・コーディングデザイン・プレゼン",
+    role: "企画・サイトデザイン(チーム全員で)・ロゴデザイン・コーディング(私達について・管理者のログイン画面)・仕様書作成・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
-    workSummary: "",
+    workSummary:
+      "クライアントの方からの依頼で、福岡県の歴史スポットを回るツアーを提案するサイトを制作しました(授業課題)。紹介する歴史スポットの中にはマイナーな場所もあり整備が行き届いていない場合があると考え、私のチームは体力面に配慮しながらも楽しめるものとなっています。",
     // 工夫点
-    point: "",
+    point:
+      "ロゴは歴史の堅いイメージを払拭したいとのご要望を頂き、全体的に丸みをもたらしています。書道は昔ながらの日本の文化で歴史を感じれるものの一つだと思い、歴てくの文字は書道の行書のようなデザインになっています。また、クライアントの方が安心してご自身で操作できるように、管理者画面やgoogle my mapの仕様書を作成しました。",
     // 反省点
-    reflection: "",
+    reflection:
+      "大きな反省点はありません。チームでコミュニケーションを取り合い、お互いの意見を尊重しながら制作を進めることができました。",
     // 振り返り
-    review: "",
+    review:
+      "私のチームのWebサイトは残念ながら選ばれませんでしたが、私が作成したロゴやgoogle my mapの仕様書が採用されたため大変嬉しかったです。",
   },
   // Dental Guide
   {
@@ -269,8 +321,15 @@ const worksData = [
     // 画像
     slideImg: ["/img/dentalGuide_heading.webp"],
     // URL
+    type: "webアプリ",
     workUrl: "https://dental-guide.vercel.app/",
     githubUrl: "https://github.com/snhrayk/CW3-DentalGuide",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "企画・ui/uxデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
@@ -300,6 +359,12 @@ const worksData = [
     type: "その他",
     workUrl: "",
     githubUrl: "",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "ui/uxデザイン・ロゴデザイン",
     // 作品概要(作品の説明、課題、解決策)
@@ -333,6 +398,12 @@ const worksData = [
     type: "webアプリ",
     workUrl: "https://2024-teampj-app.vercel.app/",
     githubUrl: "https://github.com/kmii12/2024-teampj",
+    // その他URL
+    lpUrl: "https://2024-teampj-lp.vercel.app/",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "https://2024-teampj-data-form.vercel.app/",
+    otherName: "絵本データ入力フォーム",
     // 役割
     role: "リーダー・企画・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
@@ -362,6 +433,12 @@ const worksData = [
     type: "webサイト",
     workUrl: "https://cw4-website.vercel.app/",
     githubUrl: "https://github.com/snhrayk/cw4",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "企画・サイトデザイン・ロゴデザイン・コーディング・プレゼン",
     // 作品概要(作品の説明、課題、解決策)
@@ -374,37 +451,43 @@ const worksData = [
       "冬休みに実際にこの市場に行きリサーチをして、サイトに入れる情報をより具体的にする予定だったのですが、家の事情により行くことができませんでした。そのため、情報が具体的ではないところが多いまま制作を終えてしまいました。2年でmysqlを学び理解を深めるためにお店のデータベース用でmysqlを使おうとしたのですが、nextjsとmysqlの組み合わせにはバックエンド側でAPIの作成が必要だったため、代わりにfirebaseを使いました。",
     review: "",
   },
-  // ECCダンジョン
-  {
-    id: 13,
-    title: "ECCダンジョン",
-    catchCopy: "オープンキャンパスイベント用のWebアプリ",
-    date: "2年12月",
-    // figmaのモックアップを載せる
-    img: "/img/noImg_works.png",
-    tag: ["チーム制作", "Ui/Uxデザイン"],
-    period: "2024.12",
-    // 使用言語
-    codingIcons: ["/img/"],
-    designIcons: ["figma", "Ai"],
-    // 画像
-    // 動作ごとのモックアップを載せる
-    slideImg: ["/img/"],
-    // URL
-    type: "webアプリ",
-    workUrl: "",
-    githubUrl: "https://github.com/ECC-Dungeon",
-    // 役割
-    role: "ui/uxデザイン・ロゴデザイン",
-    // 作品概要(作品の説明、課題、解決策)
-    workSummary: "",
-    // 工夫点
-    point: "",
-    // 反省点
-    reflection: "",
-    // 振り返り
-    review: "",
-  },
+  // ECCダンジョン(準備中)
+  // {
+  //   id: 13,
+  //   title: "ECCダンジョン",
+  //   catchCopy: "オープンキャンパスイベント用のWebアプリ",
+  //   date: "2年12月",
+  //   // figmaのモックアップを載せる
+  //   img: "/img/noImg_works.png",
+  //   tag: ["チーム制作", "Ui/Uxデザイン"],
+  //   period: "2024.12",
+  //   // 使用言語
+  //   codingIcons: ["/img/"],
+  //   designIcons: ["figma", "Ai"],
+  //   // 画像
+  //   // 動作ごとのモックアップを載せる
+  //   slideImg: ["/img/"],
+  //   // URL
+  //   type: "webアプリ",
+  //   workUrl: "",
+  //   githubUrl: "https://github.com/ECC-Dungeon",
+  //   その他URL
+  //   lpUrl: "無し",
+  //   documentUrl: "無し",
+  //   documentName: "",
+  //   otherUrl: "無し",
+  //   otherName: "",
+  //   // 役割
+  //   role: "ui/uxデザイン・ロゴデザイン",
+  //   // 作品概要(作品の説明、課題、解決策)
+  //   workSummary: "",
+  //   // 工夫点
+  //   point: "",
+  //   // 反省点
+  //   reflection: "",
+  //   // 振り返り
+  //   review: "",
+  // },
   // ポートフォリオ ver.2
   {
     id: 14,
@@ -423,6 +506,12 @@ const worksData = [
     type: "webサイト",
     workUrl: "https://portfolio-ver-2-mu.vercel.app/",
     githubUrl: "https://github.com/snhrayk/portfolio_ver.2",
+    // その他URL
+    lpUrl: "無し",
+    documentUrl: "無し",
+    documentName: "",
+    otherUrl: "無し",
+    otherName: "",
     // 役割
     role: "サイトデザイン、ロゴデザイン、コーディング",
     // 作品概要(作品の説明、課題、解決策)

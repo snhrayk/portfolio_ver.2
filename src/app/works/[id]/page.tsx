@@ -123,15 +123,56 @@ export default function WorksDetail() {
             {work.type === "その他" ? (
               ""
             ) : (
-              <Link
-                href={work.githubUrl}
-                onClick={(event) =>
-                  webSiteLink(event, work.githubUrl, work.title)
-                }
-                className={styles.githubBtn}
-              >
-                <span>github</span>-{work.title}
-              </Link>
+              <div className={styles.linkWrap}>
+                <Link
+                  href={work.githubUrl}
+                  onClick={(event) =>
+                    webSiteLink(event, work.githubUrl, work.title)
+                  }
+                  className={styles.githubBtn}
+                >
+                  <span>github</span>-{work.title}
+                </Link>
+                {work.lpUrl === "無し" ? (
+                  ""
+                ) : (
+                  <Link
+                    href={work.lpUrl}
+                    onClick={(event) =>
+                      webSiteLink(event, work.lpUrl, work.title)
+                    }
+                    className={styles.linkBtn}
+                  >
+                    ランディングページ
+                  </Link>
+                )}
+                {work.documentUrl === "無し" ? (
+                  ""
+                ) : (
+                  <Link
+                    href={work.documentUrl}
+                    onClick={(event) =>
+                      webSiteLink(event, work.documentUrl, work.title)
+                    }
+                    className={styles.linkBtn}
+                  >
+                    {work.documentName}
+                  </Link>
+                )}
+                {work.otherUrl === "無し" ? (
+                  ""
+                ) : (
+                  <Link
+                    href={work.otherUrl}
+                    onClick={(event) =>
+                      webSiteLink(event, work.otherUrl, work.title)
+                    }
+                    className={styles.linkBtn}
+                  >
+                    {work.otherName}
+                  </Link>
+                )}
+              </div>
             )}
             {/* 作品概要 */}
             <div className={styles.summaryWrap}>

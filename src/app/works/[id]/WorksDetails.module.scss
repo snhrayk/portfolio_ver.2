@@ -189,34 +189,63 @@
       }
     }
   }
-  .githubBtn {
+  .linkWrap {
     display: flex;
-    align-items: center;
-    font-size: $ss;
-    text-decoration: underline;
-    margin: 0.4rem 0;
-    &::before {
-      content: "";
-      display: block;
-      width: 1.6rem;
-      height: 1.6rem;
-      background: url("/img/github_worksDetail.svg");
-      background-size: cover;
-      background-position: center;
-      margin-right: 0.2rem;
-    }
-    span {
-      font-weight: bold;
-    }
-    // ホバーした時に色をピンクに変更
-    &:hover {
+    column-gap: 1.6rem;
+    .githubBtn,
+    .linkBtn {
+      display: flex;
+      align-items: center;
+      font-size: $ss;
+      text-decoration: underline;
+      margin: 0.4rem 0;
       &::before {
-        background: url("/img/github_worksDetail_hover.svg");
+        content: "";
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.2rem;
+      }
+      span {
+        font-weight: bold;
+      }
+      // ホバーした時に色をピンクに変更
+      &:hover {
+        &::before {
+          background-size: cover;
+          background-position: center;
+        }
+        cursor: url("/img/cursor_click.png"), pointer;
+        color: $pink;
+      }
+    }
+    .githubBtn {
+      &::before {
+        background: url("/img/github_works.svg");
         background-size: cover;
         background-position: center;
       }
-      cursor: url("/img/cursor_click.png"), pointer;
-      color: $pink;
+      &:hover {
+        &::before {
+          background: url("/img/github_works_hover.svg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+    .linkBtn {
+      &::before {
+        background: url("/img/link_works.svg");
+        background-size: cover;
+        background-position: center;
+      }
+      &:hover {
+        &::before {
+          background: url("/img/link_works_hover.svg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
     }
   }
   .summaryWrap {
