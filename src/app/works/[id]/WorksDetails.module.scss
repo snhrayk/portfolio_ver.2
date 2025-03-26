@@ -58,7 +58,7 @@
       background: url("/img/back_works.svg");
     }
     &:hover {
-      color: $gray;
+      color: $pink;
       cursor: url("/img/cursor_click.png"), pointer;
       &::before {
         background: url("/img/back_works_hover.svg");
