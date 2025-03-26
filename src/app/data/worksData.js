@@ -559,14 +559,14 @@ const worksData = [
   {
     id: 15,
     title: "Juice Timer",
-    catchCopy: "デザインエンジニアを意識しながら制作したWebアプリ",
+    catchCopy: "デザインエンジニアを意識しながら制作したタイマー",
     date: "2年後期",
     img: "/img/juiceTimer_heading.webp",
     tag: ["習作", "ui/uxデザイン", "コーディング"],
     period: "2024.10(1ヶ月)",
     // 使用言語
-    codingIcons: ["/img/nextjs_works.svg", "/img/sass_works.svg"],
-    designIcons: ["figma", "Ai"],
+    codingIcons: ["/img/react_works.svg", "/img/css_works.svg"],
+    designIcons: ["figma"],
     // 画像
     slideImg: [
       "/img/juiceTimer_heading.webp",
@@ -579,7 +579,7 @@ const worksData = [
       "/img/juiceTimer_works_designSystem.webp",
     ],
     // URL
-    type: "webサイト",
+    type: "webアプリ",
     workUrl: "https://oct-web-training.vercel.app/",
     githubUrl: "https://github.com/snhrayk/Oct-WebTraining",
     // その他URL

@@ -43,6 +43,11 @@ export default function WorksDetail() {
             <Image src={logo} alt="ポートフォリオロゴ" />
           </Link>
         </header>
+        <div className={styles.backBtnWrap}>
+          <Link href="/works" className={styles.backBtn}>
+            作品一覧へ戻る
+          </Link>
+        </div>
         <div className={styles.worksArea}>
           <div className={styles.sliderWrap}>
             <WorksSlider slideImg={work.slideImg} />
