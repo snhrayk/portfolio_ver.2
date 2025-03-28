@@ -242,22 +242,41 @@
     margin: 0 auto;
     .detailChild {
       width: 45%;
-      border: 2px solid $gray;
       border-radius: 1.6rem;
       padding: 2vh 2%;
-      h3 {
-        font-size: $l;
-        font-weight: lighter;
-        margin-bottom: 0.8rem;
-        color: $black;
+      background-color: $bgBlur;
+      .detailTtlWrap {
+        padding-bottom: 3.2rem;
+        border-bottom: 1px solid $gray;
+        h3 {
+          display: inline-block;
+          padding: 0.4rem 1.6rem;
+          margin-bottom: 0.8rem;
+          border-radius: 2.4rem;
+          background-color: $main;
+          color: $white;
+          font-size: $l;
+          font-weight: lighter;
+        }
+        p {
+          font-size: $s;
+          line-height: 1.6;
+          font-family: $subFont;
+        }
       }
-      p {
-        font-size: $s;
-        line-height: 1.6;
-        font-family: $subFont;
-        span {
-          text-decoration: underline;
-          text-underline-offset: 4px;
+      .alwaysWrap {
+        padding-top: 0.8rem;
+        h4 {
+          font-size: $m;
+          font-weight: bolder;
+          font-family: $subFont;
+          margin-bottom: 0.4rem;
+          color: $black;
+        }
+        p {
+          font-size: $s;
+          line-height: 1.6;
+          font-family: $subFont;
         }
       }
     }
