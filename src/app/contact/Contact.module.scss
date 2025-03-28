@@ -42,9 +42,15 @@
     text-align: center;
     padding: 16vh 0 8vh;
   }
-  p {
+  a {
+    display: block;
     font-size: $ll;
     text-align: center;
     font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+      color: $gray;
+      cursor: url("/img/cursor_click.png"), pointer;
+    }
   }
 }

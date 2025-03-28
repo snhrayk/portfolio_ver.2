@@ -52,10 +52,11 @@
   height: auto;
   padding: 4vh 2%;
   .workItem {
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100%;
+    gap: 0.4rem;
   }
   .workImg {
     width: 100%;
@@ -67,7 +68,7 @@
     position: relative;
   }
   h2 {
-    margin: 0.8rem 0 0;
+    margin-top: 0.8rem;
     font-size: $m;
     font-family: $font;
   }
@@ -77,10 +78,13 @@
     font-weight: bolder;
   }
   .tagWrap {
+    height: 3.2rem;
+    // border: 1px solid tomato;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     column-gap: 0.8rem;
-    margin: 1.6rem 0 0.4rem;
+    margin-top: 1.6rem;
     li {
       color: $gray;
       font-family: $subFont;
