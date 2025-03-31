@@ -83,7 +83,7 @@ const worksData = [
   //   review:
   //     "LPについて、sassやfigmaの使い方、企画書の作り方など授業よりも先に学ぶことが多く、大変勉強になりました。",
   // },
-  // faveTag(サイトのリンク以外は完了)
+  // faveTag(完了)
   {
     id: 3,
     title: "fave#",
@@ -119,7 +119,7 @@ const worksData = [
     ],
     // URL
     type: "webアプリ",
-    workUrl: "",
+    workUrl: "https://click.ecc.ac.jp/ecc/asunahara/faveTag/",
     githubUrl: "https://github.com/snhrayk/CW2-faveTag",
     // その他URL
     lpUrl: "無し",
